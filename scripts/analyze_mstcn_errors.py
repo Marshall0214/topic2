@@ -11,6 +11,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from baseline import Meter, build_model, load_sequence, predict_logits, segments
+from spatial_encoders import build_spatial_model
 
 
 def diagnose(pred, y, confusion, boundaries, durations):
@@ -59,9 +60,13 @@ def diagnose(pred, y, confusion, boundaries, durations):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--run', default='mstcn_pku_dev_seed17')
+    p.add_argument('--model',choices=['mstcn','protas'],default='mstcn')
+    p.add_argument('--output-name',default='validation_error_analysis')
     args = p.parse_args()
     if Path(args.run).name != args.run:
         p.error('run must be a directory name')
+    if Path(args.output_name).name != args.output_name or args.output_name in ['.','..']:
+        p.error('output-name must be a directory name')
     run = ROOT / 'runs' / args.run
     cfg = json.loads((run / 'config.json').read_text())
     if cfg['normalization'] != 'none' or cfg.get('trainval'):
@@ -70,28 +75,31 @@ def main():
     assert hashlib.sha256(split_path.read_bytes()).hexdigest() == cfg['split_sha256']
     names = cfg['selected']['val']
     assert names and not set(names) & set(cfg['selected']['train'])
+    assert not set(names) & set(json.loads(split_path.read_text())['splits']['test'])
     torch.set_num_threads(4)
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
-    checkpoint = run / 'mstcn/best.pt'
+    checkpoint = run / args.model / 'best.pt'
     state = torch.load(checkpoint, map_location='cuda', weights_only=True)
-    model = build_model('mstcn', run/'train_graph.pkl', cfg['stages'], cfg['layers'], cfg['width']).cuda().eval()
+    model = (build_spatial_model(cfg.get('spatial_encoder','linear'),cfg['stages'],cfg['layers'],cfg['width'])
+             if args.model=='mstcn' else build_model('protas', run/'train_graph.pkl', cfg['stages'], cfg['layers'], cfg['width'],
+                graph_reference=cfg.get('graph_reference','independent_copy'),task_graph=cfg.get('task_graph','learnable'))).cuda().eval()
     model.load_state_dict(state['model'], strict=True)
     confusion = np.zeros((52,52), dtype=np.int64)
     boundaries = {w:np.zeros(4,dtype=np.int64) for w in [5,10,20]}
     meter = Meter()
     rows, offsets, durations = [], [], []
-    out = run / 'validation_error_analysis'
-    out.mkdir(exist_ok=True)
+    out = run / args.output_name
+    out.mkdir(exist_ok=False)
     cache = out / 'predictions'
     cache.mkdir(exist_ok=True)
     with torch.inference_mode():
         for name in names:
             feat, y = load_sequence(name, Path(cfg['data_root']))
             x = torch.from_numpy(feat)[None].cuda()
-            pred = predict_logits(model,'mstcn',x,torch.ones(1,1,len(y),device='cuda')).argmax(1)[0].cpu().numpy()
+            pred = predict_logits(model,args.model,x,torch.ones(1,1,len(y),device='cuda')).argmax(1)[0].cpu().numpy()
             np.savez_compressed(cache/(Path(name).stem+'.npz'), pred=pred, target=y)
             meter.update(pred,y)
             a = diagnose(pred,y,confusion,boundaries,durations)
@@ -119,7 +127,7 @@ def main():
                                far_frames=int(v[2]),far_error_pct=float(100*v[3]/v[2]) if v[2] else None,
                                share_of_all_errors_near_pct=float(100*v[1]/error)) for w,v in boundaries.items()}
     off=np.asarray(offsets)
-    result=dict(split='validation only',epoch=state['epoch'],checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
+    result=dict(run=args.run,model=args.model,split='validation only',epoch=state['epoch'],checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
                 metrics=meter.scores(),frames=total,errors=error,
                 error_types={k:dict(frames=v,share_of_errors_pct=100*v/error) for k,v in counts.items()},
                 foreground_recall_pct=float(100*np.trace(confusion[1:,1:])/support[1:].sum()),
