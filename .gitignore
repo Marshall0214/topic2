@@ -6,3 +6,4 @@ __pycache__/
 *.npz
 *.pkl
 *.npy
+/reports/spatial_pilot/*.log
