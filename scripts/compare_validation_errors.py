@@ -1,5 +1,6 @@
 """Paired validation diagnosis from saved predictions; no test or tuning."""
 import json
+import argparse
 from pathlib import Path
 import sys
 
@@ -9,8 +10,19 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from baseline import segments
 
-runs=['mstcn_pku_dev_seed17','protas_pku_fixedgraph_dev_seed17']
-folder='validation_pair_fixedgraph_v1'
+parser=argparse.ArgumentParser()
+parser.add_argument('--mstcn-run',default='mstcn_pku_dev_seed17')
+parser.add_argument('--protas-run',default='protas_pku_fixedgraph_dev_seed17')
+parser.add_argument('--prediction-folder',default='validation_pair_fixedgraph_v1')
+parser.add_argument('--report-folder',default='reports/protas_fixed_graph/validation_comparison')
+args=parser.parse_args()
+runs=[args.mstcn_run,args.protas_run]
+folder=args.prediction_folder
+if any(Path(name).name!=name or name in ['.','..'] for name in runs+[folder]):
+    parser.error('Run and prediction folder must be simple names')
+out=(ROOT/args.report_folder).resolve()
+if not out.is_relative_to((ROOT/'reports').resolve()):
+    parser.error('Report folder must stay inside reports')
 dirs=[ROOT/'runs'/run/folder for run in runs]
 cfgs=[json.loads((ROOT/'runs'/run/'config.json').read_text()) for run in runs]
 assert cfgs[0]['selected']['val']==cfgs[1]['selected']['val']
@@ -59,7 +71,6 @@ summary=dict(scope='77 validation sequences; best checkpoints; descriptive diagn
                  start_absolute_median=float(np.median(np.abs(np.asarray(offsets)[:,0]))),
                  end_absolute_median=float(np.median(np.abs(np.asarray(offsets)[:,1]))))
                  for run,offsets in zip(runs,common_offsets)})
-out=ROOT/'reports/protas_fixed_graph/validation_comparison'
 out.mkdir(parents=True,exist_ok=True)
 (out/'comparison.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
 (out/'segments.json').write_text(json.dumps(rows,indent=2),encoding='utf-8')

@@ -1,0 +1,6542 @@
+[
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 30,
+    "start": 472,
+    "end": 513,
+    "duration": 41,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 4,
+    "start": 544,
+    "end": 573,
+    "duration": 29,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 20,
+    "start": 595,
+    "end": 626,
+    "duration": 31,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 43,
+    "start": 663,
+    "end": 704,
+    "duration": 41,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 22,
+    "start": 716,
+    "end": 777,
+    "duration": 61,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 28,
+    "start": 811,
+    "end": 877,
+    "duration": 66,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N13-R.npy",
+    "class_id": 48,
+    "start": 922,
+    "end": 1059,
+    "duration": 137,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 10,
+    "start": 49,
+    "end": 88,
+    "duration": 39,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 23,
+    "start": 114,
+    "end": 166,
+    "duration": 52,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 8,
+    "start": 166,
+    "end": 217,
+    "duration": 51,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 39,
+    "start": 217,
+    "end": 281,
+    "duration": 64,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 10,
+    "start": 281,
+    "end": 330,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N08-M.npy",
+    "class_id": 43,
+    "start": 330,
+    "end": 352,
+    "duration": 22,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 37,
+    "start": 63,
+    "end": 231,
+    "duration": 168,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 41,
+    "start": 231,
+    "end": 286,
+    "duration": 55,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 47,
+    "start": 442,
+    "end": 703,
+    "duration": 261,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 40,
+    "start": 703,
+    "end": 764,
+    "duration": 61,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 45,
+    "start": 779,
+    "end": 888,
+    "duration": 109,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 4,
+    "start": 888,
+    "end": 948,
+    "duration": 60,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N01-R.npy",
+    "class_id": 50,
+    "start": 973,
+    "end": 1056,
+    "duration": 83,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 10,
+    "start": 169,
+    "end": 354,
+    "duration": 185,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 23,
+    "start": 354,
+    "end": 512,
+    "duration": 158,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 8,
+    "start": 512,
+    "end": 698,
+    "duration": 186,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 39,
+    "start": 716,
+    "end": 797,
+    "duration": 81,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 10,
+    "start": 823,
+    "end": 971,
+    "duration": 148,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A19N04-L.npy",
+    "class_id": 43,
+    "start": 971,
+    "end": 1026,
+    "duration": 55,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 10,
+    "start": 282,
+    "end": 463,
+    "duration": 181,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 8,
+    "start": 476,
+    "end": 674,
+    "duration": 198,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 51,
+    "start": 699,
+    "end": 756,
+    "duration": 57,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 40,
+    "start": 756,
+    "end": 929,
+    "duration": 173,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 7,
+    "start": 1029,
+    "end": 1137,
+    "duration": 108,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 34,
+    "start": 1137,
+    "end": 1160,
+    "duration": 23,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N01-R.npy",
+    "class_id": 42,
+    "start": 1205,
+    "end": 1392,
+    "duration": 187,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 11,
+    "start": 264,
+    "end": 302,
+    "duration": 38,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 45,
+    "start": 402,
+    "end": 471,
+    "duration": 69,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 31,
+    "start": 471,
+    "end": 586,
+    "duration": 115,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 4,
+    "start": 586,
+    "end": 676,
+    "duration": 90,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 42,
+    "start": 676,
+    "end": 742,
+    "duration": 66,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N04-M.npy",
+    "class_id": 43,
+    "start": 742,
+    "end": 820,
+    "duration": 78,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 36,
+    "start": 589,
+    "end": 634,
+    "duration": 45,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 50,
+    "start": 741,
+    "end": 839,
+    "duration": 98,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 39,
+    "start": 839,
+    "end": 988,
+    "duration": 149,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 34,
+    "start": 1020,
+    "end": 1035,
+    "duration": 15,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 48,
+    "start": 1071,
+    "end": 1245,
+    "duration": 174,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 28,
+    "start": 1300,
+    "end": 1419,
+    "duration": 119,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N01-R.npy",
+    "class_id": 39,
+    "start": 1419,
+    "end": 1473,
+    "duration": 54,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 46,
+    "start": 493,
+    "end": 554,
+    "duration": 61,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 36,
+    "start": 554,
+    "end": 584,
+    "duration": 30,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 50,
+    "start": 637,
+    "end": 699,
+    "duration": 62,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 8,
+    "start": 699,
+    "end": 763,
+    "duration": 64,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 45,
+    "start": 763,
+    "end": 830,
+    "duration": 67,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 34,
+    "start": 830,
+    "end": 840,
+    "duration": 10,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 45,
+    "start": 840,
+    "end": 844,
+    "duration": 4,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N08-R.npy",
+    "class_id": 11,
+    "start": 865,
+    "end": 903,
+    "duration": 38,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 37,
+    "start": 67,
+    "end": 171,
+    "duration": 104,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 17,
+    "start": 216,
+    "end": 321,
+    "duration": 105,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 42,
+    "start": 321,
+    "end": 394,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 36,
+    "start": 394,
+    "end": 452,
+    "duration": 58,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 25,
+    "start": 483,
+    "end": 556,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 49,
+    "start": 556,
+    "end": 628,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N04-M.npy",
+    "class_id": 48,
+    "start": 662,
+    "end": 861,
+    "duration": 199,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 48,
+    "start": 279,
+    "end": 603,
+    "duration": 324,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 49,
+    "start": 603,
+    "end": 613,
+    "duration": 10,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 48,
+    "start": 613,
+    "end": 617,
+    "duration": 4,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 30,
+    "start": 712,
+    "end": 962,
+    "duration": 250,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 20,
+    "start": 962,
+    "end": 1004,
+    "duration": 42,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 5,
+    "start": 1004,
+    "end": 1073,
+    "duration": 69,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 17,
+    "start": 1073,
+    "end": 1151,
+    "duration": 78,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 30,
+    "start": 1151,
+    "end": 1170,
+    "duration": 19,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 43,
+    "start": 1170,
+    "end": 1200,
+    "duration": 30,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 30,
+    "start": 1200,
+    "end": 1221,
+    "duration": 21,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 11,
+    "start": 1221,
+    "end": 1291,
+    "duration": 70,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N01-R.npy",
+    "class_id": 30,
+    "start": 1291,
+    "end": 1335,
+    "duration": 44,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 30,
+    "start": 143,
+    "end": 259,
+    "duration": 116,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 4,
+    "start": 259,
+    "end": 293,
+    "duration": 34,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 30,
+    "start": 293,
+    "end": 363,
+    "duration": 70,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 20,
+    "start": 363,
+    "end": 446,
+    "duration": 83,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 30,
+    "start": 446,
+    "end": 450,
+    "duration": 4,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 43,
+    "start": 479,
+    "end": 526,
+    "duration": 47,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 22,
+    "start": 526,
+    "end": 609,
+    "duration": 83,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 28,
+    "start": 609,
+    "end": 734,
+    "duration": 125,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A01N10-M.npy",
+    "class_id": 48,
+    "start": 734,
+    "end": 901,
+    "duration": 167,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 47,
+    "start": 138,
+    "end": 206,
+    "duration": 68,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 48,
+    "start": 220,
+    "end": 284,
+    "duration": 64,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 33,
+    "start": 284,
+    "end": 313,
+    "duration": 29,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 51,
+    "start": 327,
+    "end": 371,
+    "duration": 44,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 34,
+    "start": 393,
+    "end": 411,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 30,
+    "start": 460,
+    "end": 519,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N11-M.npy",
+    "class_id": 33,
+    "start": 519,
+    "end": 568,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 6,
+    "start": 81,
+    "end": 165,
+    "duration": 84,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 23,
+    "start": 230,
+    "end": 352,
+    "duration": 122,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 8,
+    "start": 376,
+    "end": 527,
+    "duration": 151,
+    "category": "only_protas_missed",
+    "pieces": [
+      4,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 9,
+    "start": 527,
+    "end": 598,
+    "duration": 71,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 45,
+    "start": 629,
+    "end": 798,
+    "duration": 169,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 30,
+    "start": 823,
+    "end": 966,
+    "duration": 143,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N04-M.npy",
+    "class_id": 40,
+    "start": 966,
+    "end": 1150,
+    "duration": 184,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 1,
+    "start": 121,
+    "end": 166,
+    "duration": 45,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 28,
+    "start": 217,
+    "end": 336,
+    "duration": 119,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 33,
+    "start": 350,
+    "end": 386,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 10,
+    "start": 410,
+    "end": 449,
+    "duration": 39,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 4,
+    "start": 477,
+    "end": 509,
+    "duration": 32,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 34,
+    "start": 524,
+    "end": 544,
+    "duration": 20,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N13-R.npy",
+    "class_id": 42,
+    "start": 595,
+    "end": 639,
+    "duration": 44,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 48,
+    "start": 301,
+    "end": 601,
+    "duration": 300,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 49,
+    "start": 601,
+    "end": 663,
+    "duration": 62,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 30,
+    "start": 680,
+    "end": 750,
+    "duration": 70,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 20,
+    "start": 750,
+    "end": 807,
+    "duration": 57,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 5,
+    "start": 807,
+    "end": 876,
+    "duration": 69,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 17,
+    "start": 876,
+    "end": 963,
+    "duration": 87,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 43,
+    "start": 963,
+    "end": 1002,
+    "duration": 39,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N08-L.npy",
+    "class_id": 11,
+    "start": 1002,
+    "end": 1040,
+    "duration": 38,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 37,
+    "start": 233,
+    "end": 355,
+    "duration": 122,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 17,
+    "start": 404,
+    "end": 432,
+    "duration": 28,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 42,
+    "start": 478,
+    "end": 525,
+    "duration": 47,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 36,
+    "start": 525,
+    "end": 556,
+    "duration": 31,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 42,
+    "start": 556,
+    "end": 635,
+    "duration": 79,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 25,
+    "start": 693,
+    "end": 781,
+    "duration": 88,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 49,
+    "start": 781,
+    "end": 810,
+    "duration": 29,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N08-R.npy",
+    "class_id": 48,
+    "start": 856,
+    "end": 996,
+    "duration": 140,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 20,
+    "start": 124,
+    "end": 326,
+    "duration": 202,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      4
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 33,
+    "start": 326,
+    "end": 367,
+    "duration": 41,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 20,
+    "start": 367,
+    "end": 429,
+    "duration": 62,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 30,
+    "start": 525,
+    "end": 813,
+    "duration": 288,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 23,
+    "start": 828,
+    "end": 1051,
+    "duration": 223,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 4,
+    "start": 1065,
+    "end": 1116,
+    "duration": 51,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 46,
+    "start": 1227,
+    "end": 1336,
+    "duration": 109,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 34,
+    "start": 1386,
+    "end": 1402,
+    "duration": 16,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N04-L.npy",
+    "class_id": 32,
+    "start": 1402,
+    "end": 1436,
+    "duration": 34,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 37,
+    "start": 253,
+    "end": 326,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 41,
+    "start": 326,
+    "end": 343,
+    "duration": 17,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 50,
+    "start": 392,
+    "end": 472,
+    "duration": 80,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 2,
+    "start": 472,
+    "end": 538,
+    "duration": 66,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 45,
+    "start": 562,
+    "end": 653,
+    "duration": 91,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 36,
+    "start": 653,
+    "end": 692,
+    "duration": 39,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N11-R.npy",
+    "class_id": 39,
+    "start": 743,
+    "end": 796,
+    "duration": 53,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 1,
+    "start": 228,
+    "end": 304,
+    "duration": 76,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 28,
+    "start": 369,
+    "end": 457,
+    "duration": 88,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 33,
+    "start": 457,
+    "end": 529,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 10,
+    "start": 563,
+    "end": 694,
+    "duration": 131,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 4,
+    "start": 709,
+    "end": 741,
+    "duration": 32,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 34,
+    "start": 794,
+    "end": 848,
+    "duration": 54,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N06-L.npy",
+    "class_id": 42,
+    "start": 865,
+    "end": 927,
+    "duration": 62,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 10,
+    "start": 231,
+    "end": 267,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 50,
+    "start": 294,
+    "end": 345,
+    "duration": 51,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 34,
+    "start": 367,
+    "end": 390,
+    "duration": 23,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 3,
+    "start": 418,
+    "end": 471,
+    "duration": 53,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 8,
+    "start": 471,
+    "end": 510,
+    "duration": 39,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 3,
+    "start": 510,
+    "end": 554,
+    "duration": 44,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 8,
+    "start": 554,
+    "end": 597,
+    "duration": 43,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N13-R.npy",
+    "class_id": 9,
+    "start": 642,
+    "end": 668,
+    "duration": 26,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 7,
+    "start": 341,
+    "end": 477,
+    "duration": 136,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 15,
+    "start": 477,
+    "end": 587,
+    "duration": 110,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 17,
+    "start": 587,
+    "end": 631,
+    "duration": 44,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 15,
+    "start": 631,
+    "end": 689,
+    "duration": 58,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 17,
+    "start": 689,
+    "end": 750,
+    "duration": 61,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 7,
+    "start": 750,
+    "end": 804,
+    "duration": 54,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 19,
+    "start": 808,
+    "end": 858,
+    "duration": 50,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A09N08-L.npy",
+    "class_id": 11,
+    "start": 858,
+    "end": 894,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 10,
+    "start": 113,
+    "end": 228,
+    "duration": 115,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 50,
+    "start": 228,
+    "end": 273,
+    "duration": 45,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      2
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 34,
+    "start": 312,
+    "end": 332,
+    "duration": 20,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 3,
+    "start": 383,
+    "end": 433,
+    "duration": 50,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 8,
+    "start": 465,
+    "end": 518,
+    "duration": 53,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      2
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 3,
+    "start": 541,
+    "end": 578,
+    "duration": 37,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 8,
+    "start": 599,
+    "end": 650,
+    "duration": 51,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N10-M.npy",
+    "class_id": 9,
+    "start": 690,
+    "end": 725,
+    "duration": 35,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      2
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 37,
+    "start": 239,
+    "end": 442,
+    "duration": 203,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 41,
+    "start": 442,
+    "end": 471,
+    "duration": 29,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 47,
+    "start": 595,
+    "end": 710,
+    "duration": 115,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 45,
+    "start": 710,
+    "end": 811,
+    "duration": 101,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 4,
+    "start": 811,
+    "end": 907,
+    "duration": 96,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N08-L.npy",
+    "class_id": 50,
+    "start": 907,
+    "end": 946,
+    "duration": 39,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 48,
+    "start": 97,
+    "end": 215,
+    "duration": 118,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 33,
+    "start": 215,
+    "end": 235,
+    "duration": 20,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 23,
+    "start": 257,
+    "end": 297,
+    "duration": 40,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 44,
+    "start": 297,
+    "end": 338,
+    "duration": 41,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 31,
+    "start": 338,
+    "end": 380,
+    "duration": 42,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N06-M.npy",
+    "class_id": 46,
+    "start": 402,
+    "end": 479,
+    "duration": 77,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 34,
+    "start": 434,
+    "end": 449,
+    "duration": 15,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 32,
+    "start": 488,
+    "end": 585,
+    "duration": 97,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 17,
+    "start": 585,
+    "end": 614,
+    "duration": 29,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 19,
+    "start": 644,
+    "end": 673,
+    "duration": 29,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 15,
+    "start": 716,
+    "end": 752,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 41,
+    "start": 770,
+    "end": 806,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N11-R.npy",
+    "class_id": 11,
+    "start": 857,
+    "end": 879,
+    "duration": 22,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 48,
+    "start": 153,
+    "end": 212,
+    "duration": 59,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 49,
+    "start": 212,
+    "end": 252,
+    "duration": 40,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 30,
+    "start": 252,
+    "end": 294,
+    "duration": 42,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 20,
+    "start": 294,
+    "end": 346,
+    "duration": 52,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 5,
+    "start": 346,
+    "end": 381,
+    "duration": 35,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 17,
+    "start": 381,
+    "end": 399,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 43,
+    "start": 424,
+    "end": 459,
+    "duration": 35,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A10N11-M.npy",
+    "class_id": 11,
+    "start": 459,
+    "end": 500,
+    "duration": 41,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 10,
+    "start": 215,
+    "end": 434,
+    "duration": 219,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 50,
+    "start": 474,
+    "end": 592,
+    "duration": 118,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 34,
+    "start": 639,
+    "end": 657,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 3,
+    "start": 954,
+    "end": 1091,
+    "duration": 137,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 8,
+    "start": 1152,
+    "end": 1290,
+    "duration": 138,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 3,
+    "start": 1339,
+    "end": 1442,
+    "duration": 103,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 8,
+    "start": 1457,
+    "end": 1601,
+    "duration": 144,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A02N06-L.npy",
+    "class_id": 9,
+    "start": 1835,
+    "end": 1866,
+    "duration": 31,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 46,
+    "start": 477,
+    "end": 504,
+    "duration": 27,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 36,
+    "start": 517,
+    "end": 556,
+    "duration": 39,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 50,
+    "start": 596,
+    "end": 677,
+    "duration": 81,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 8,
+    "start": 677,
+    "end": 744,
+    "duration": 67,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 45,
+    "start": 744,
+    "end": 800,
+    "duration": 56,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 34,
+    "start": 832,
+    "end": 851,
+    "duration": 19,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N12-L.npy",
+    "class_id": 11,
+    "start": 882,
+    "end": 900,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 39,
+    "start": 282,
+    "end": 368,
+    "duration": 86,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 2,
+    "start": 469,
+    "end": 657,
+    "duration": 188,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 3,
+    "start": 657,
+    "end": 783,
+    "duration": 126,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 13,
+    "start": 798,
+    "end": 869,
+    "duration": 71,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 25,
+    "start": 869,
+    "end": 964,
+    "duration": 95,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N06-L.npy",
+    "class_id": 41,
+    "start": 964,
+    "end": 1010,
+    "duration": 46,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 37,
+    "start": 160,
+    "end": 278,
+    "duration": 118,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 17,
+    "start": 289,
+    "end": 323,
+    "duration": 34,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 42,
+    "start": 353,
+    "end": 414,
+    "duration": 61,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 36,
+    "start": 414,
+    "end": 460,
+    "duration": 46,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 25,
+    "start": 520,
+    "end": 592,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 49,
+    "start": 610,
+    "end": 669,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A23N12-L.npy",
+    "class_id": 48,
+    "start": 719,
+    "end": 852,
+    "duration": 133,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 37,
+    "start": 135,
+    "end": 241,
+    "duration": 106,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 41,
+    "start": 241,
+    "end": 328,
+    "duration": 87,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 47,
+    "start": 343,
+    "end": 392,
+    "duration": 49,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      2
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 40,
+    "start": 409,
+    "end": 455,
+    "duration": 46,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 45,
+    "start": 469,
+    "end": 531,
+    "duration": 62,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 4,
+    "start": 531,
+    "end": 580,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A14N11-M.npy",
+    "class_id": 50,
+    "start": 580,
+    "end": 634,
+    "duration": 54,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 6,
+    "start": 228,
+    "end": 307,
+    "duration": 79,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 23,
+    "start": 354,
+    "end": 421,
+    "duration": 67,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 8,
+    "start": 421,
+    "end": 557,
+    "duration": 136,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 9,
+    "start": 612,
+    "end": 642,
+    "duration": 30,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 45,
+    "start": 642,
+    "end": 757,
+    "duration": 115,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 30,
+    "start": 757,
+    "end": 846,
+    "duration": 89,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N08-R.npy",
+    "class_id": 40,
+    "start": 846,
+    "end": 922,
+    "duration": 76,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 48,
+    "start": 280,
+    "end": 519,
+    "duration": 239,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 33,
+    "start": 567,
+    "end": 639,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 23,
+    "start": 653,
+    "end": 838,
+    "duration": 185,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 44,
+    "start": 838,
+    "end": 1004,
+    "duration": 166,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 31,
+    "start": 1004,
+    "end": 1130,
+    "duration": 126,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N01-L.npy",
+    "class_id": 46,
+    "start": 1173,
+    "end": 1264,
+    "duration": 91,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 2,
+    "start": 161,
+    "end": 220,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 39,
+    "start": 220,
+    "end": 305,
+    "duration": 85,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 44,
+    "start": 305,
+    "end": 387,
+    "duration": 82,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 11,
+    "start": 387,
+    "end": 425,
+    "duration": 38,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 43,
+    "start": 481,
+    "end": 549,
+    "duration": 68,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N11-L.npy",
+    "class_id": 20,
+    "start": 549,
+    "end": 609,
+    "duration": 60,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 37,
+    "start": 56,
+    "end": 83,
+    "duration": 27,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 41,
+    "start": 101,
+    "end": 121,
+    "duration": 20,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 50,
+    "start": 155,
+    "end": 206,
+    "duration": 51,
+    "category": "neither_missed",
+    "pieces": [
+      3,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 2,
+    "start": 206,
+    "end": 279,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 45,
+    "start": 279,
+    "end": 331,
+    "duration": 52,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 36,
+    "start": 331,
+    "end": 358,
+    "duration": 27,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N08-M.npy",
+    "class_id": 39,
+    "start": 390,
+    "end": 435,
+    "duration": 45,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 32,
+    "start": 380,
+    "end": 492,
+    "duration": 112,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 33,
+    "start": 492,
+    "end": 551,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 6,
+    "start": 551,
+    "end": 611,
+    "duration": 60,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 36,
+    "start": 611,
+    "end": 646,
+    "duration": 35,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 10,
+    "start": 717,
+    "end": 886,
+    "duration": 169,
+    "category": "only_protas_missed",
+    "pieces": [
+      3,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 51,
+    "start": 922,
+    "end": 980,
+    "duration": 58,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N01-L.npy",
+    "class_id": 40,
+    "start": 980,
+    "end": 1208,
+    "duration": 228,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 22,
+    "start": 225,
+    "end": 250,
+    "duration": 25,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 30,
+    "start": 250,
+    "end": 530,
+    "duration": 280,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 51,
+    "start": 530,
+    "end": 618,
+    "duration": 88,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      3
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 5,
+    "start": 618,
+    "end": 667,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 20,
+    "start": 682,
+    "end": 763,
+    "duration": 81,
+    "category": "only_protas_missed",
+    "pieces": [
+      3,
+      0
+    ]
+  },
+  {
+    "sequence": "A24N08-R.npy",
+    "class_id": 40,
+    "start": 763,
+    "end": 864,
+    "duration": 101,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 2,
+    "start": 192,
+    "end": 337,
+    "duration": 145,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 39,
+    "start": 399,
+    "end": 471,
+    "duration": 72,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 44,
+    "start": 507,
+    "end": 593,
+    "duration": 86,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 11,
+    "start": 593,
+    "end": 627,
+    "duration": 34,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 43,
+    "start": 667,
+    "end": 691,
+    "duration": 24,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N06-R.npy",
+    "class_id": 20,
+    "start": 766,
+    "end": 899,
+    "duration": 133,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 30,
+    "start": 828,
+    "end": 1023,
+    "duration": 195,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 4,
+    "start": 1023,
+    "end": 1093,
+    "duration": 70,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 30,
+    "start": 1093,
+    "end": 1208,
+    "duration": 115,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 20,
+    "start": 1304,
+    "end": 1375,
+    "duration": 71,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 43,
+    "start": 1375,
+    "end": 1577,
+    "duration": 202,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 22,
+    "start": 1577,
+    "end": 1639,
+    "duration": 62,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 28,
+    "start": 1687,
+    "end": 1832,
+    "duration": 145,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A01N06-L.npy",
+    "class_id": 48,
+    "start": 1832,
+    "end": 2211,
+    "duration": 379,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      3
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 22,
+    "start": 132,
+    "end": 203,
+    "duration": 71,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 33,
+    "start": 219,
+    "end": 267,
+    "duration": 48,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 30,
+    "start": 267,
+    "end": 341,
+    "duration": 74,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 51,
+    "start": 360,
+    "end": 413,
+    "duration": 53,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 5,
+    "start": 413,
+    "end": 464,
+    "duration": 51,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 20,
+    "start": 476,
+    "end": 532,
+    "duration": 56,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N12-L.npy",
+    "class_id": 40,
+    "start": 543,
+    "end": 575,
+    "duration": 32,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 48,
+    "start": 216,
+    "end": 430,
+    "duration": 214,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 33,
+    "start": 456,
+    "end": 496,
+    "duration": 40,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 23,
+    "start": 561,
+    "end": 651,
+    "duration": 90,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 44,
+    "start": 651,
+    "end": 726,
+    "duration": 75,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 31,
+    "start": 726,
+    "end": 793,
+    "duration": 67,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A07N10-R.npy",
+    "class_id": 46,
+    "start": 827,
+    "end": 884,
+    "duration": 57,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 28,
+    "start": 198,
+    "end": 297,
+    "duration": 99,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 32,
+    "start": 299,
+    "end": 346,
+    "duration": 47,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 1,
+    "start": 346,
+    "end": 385,
+    "duration": 39,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 35,
+    "start": 420,
+    "end": 522,
+    "duration": 102,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 17,
+    "start": 536,
+    "end": 571,
+    "duration": 35,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 9,
+    "start": 639,
+    "end": 670,
+    "duration": 31,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N10-R.npy",
+    "class_id": 19,
+    "start": 701,
+    "end": 746,
+    "duration": 45,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 10,
+    "start": 92,
+    "end": 142,
+    "duration": 50,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 8,
+    "start": 142,
+    "end": 206,
+    "duration": 64,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 51,
+    "start": 206,
+    "end": 243,
+    "duration": 37,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 40,
+    "start": 243,
+    "end": 282,
+    "duration": 39,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 7,
+    "start": 312,
+    "end": 378,
+    "duration": 66,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 34,
+    "start": 378,
+    "end": 400,
+    "duration": 22,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N11-M.npy",
+    "class_id": 42,
+    "start": 447,
+    "end": 502,
+    "duration": 55,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 10,
+    "start": 130,
+    "end": 197,
+    "duration": 67,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 23,
+    "start": 218,
+    "end": 276,
+    "duration": 58,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 8,
+    "start": 276,
+    "end": 324,
+    "duration": 48,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 39,
+    "start": 348,
+    "end": 408,
+    "duration": 60,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 10,
+    "start": 433,
+    "end": 504,
+    "duration": 71,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A19N11-R.npy",
+    "class_id": 43,
+    "start": 504,
+    "end": 580,
+    "duration": 76,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 47,
+    "start": 399,
+    "end": 572,
+    "duration": 173,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      3
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 37,
+    "start": 583,
+    "end": 745,
+    "duration": 162,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 33,
+    "start": 779,
+    "end": 818,
+    "duration": 39,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 51,
+    "start": 880,
+    "end": 945,
+    "duration": 65,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 34,
+    "start": 1001,
+    "end": 1024,
+    "duration": 23,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 30,
+    "start": 1069,
+    "end": 1281,
+    "duration": 212,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N01-R.npy",
+    "class_id": 33,
+    "start": 1281,
+    "end": 1320,
+    "duration": 39,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 36,
+    "start": 270,
+    "end": 355,
+    "duration": 85,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 50,
+    "start": 355,
+    "end": 433,
+    "duration": 78,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 39,
+    "start": 433,
+    "end": 488,
+    "duration": 55,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 34,
+    "start": 499,
+    "end": 534,
+    "duration": 35,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 48,
+    "start": 585,
+    "end": 890,
+    "duration": 305,
+    "category": "neither_missed",
+    "pieces": [
+      4,
+      2
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 28,
+    "start": 946,
+    "end": 1027,
+    "duration": 81,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N08-L.npy",
+    "class_id": 39,
+    "start": 1027,
+    "end": 1098,
+    "duration": 71,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 22,
+    "start": 239,
+    "end": 264,
+    "duration": 25,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 30,
+    "start": 264,
+    "end": 557,
+    "duration": 293,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 51,
+    "start": 557,
+    "end": 678,
+    "duration": 121,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 30,
+    "start": 678,
+    "end": 682,
+    "duration": 4,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 5,
+    "start": 689,
+    "end": 749,
+    "duration": 60,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 20,
+    "start": 823,
+    "end": 960,
+    "duration": 137,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A24N04-M.npy",
+    "class_id": 40,
+    "start": 960,
+    "end": 1138,
+    "duration": 178,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 34,
+    "start": 269,
+    "end": 303,
+    "duration": 34,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 32,
+    "start": 303,
+    "end": 384,
+    "duration": 81,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 17,
+    "start": 384,
+    "end": 448,
+    "duration": 64,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 19,
+    "start": 448,
+    "end": 472,
+    "duration": 24,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 15,
+    "start": 512,
+    "end": 581,
+    "duration": 69,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 41,
+    "start": 613,
+    "end": 638,
+    "duration": 25,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A17N04-L.npy",
+    "class_id": 11,
+    "start": 662,
+    "end": 700,
+    "duration": 38,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 35,
+    "start": 80,
+    "end": 135,
+    "duration": 55,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 32,
+    "start": 135,
+    "end": 175,
+    "duration": 40,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 1,
+    "start": 175,
+    "end": 201,
+    "duration": 26,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 28,
+    "start": 234,
+    "end": 278,
+    "duration": 44,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 17,
+    "start": 278,
+    "end": 297,
+    "duration": 19,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 9,
+    "start": 338,
+    "end": 353,
+    "duration": 15,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A05N06-M.npy",
+    "class_id": 19,
+    "start": 353,
+    "end": 381,
+    "duration": 28,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 2,
+    "start": 344,
+    "end": 401,
+    "duration": 57,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 28,
+    "start": 436,
+    "end": 495,
+    "duration": 59,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 48,
+    "start": 511,
+    "end": 645,
+    "duration": 134,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 7,
+    "start": 701,
+    "end": 809,
+    "duration": 108,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 5,
+    "start": 809,
+    "end": 852,
+    "duration": 43,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N11-R.npy",
+    "class_id": 17,
+    "start": 908,
+    "end": 934,
+    "duration": 26,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 39,
+    "start": 130,
+    "end": 172,
+    "duration": 42,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 2,
+    "start": 199,
+    "end": 228,
+    "duration": 29,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 3,
+    "start": 228,
+    "end": 275,
+    "duration": 47,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 13,
+    "start": 275,
+    "end": 330,
+    "duration": 55,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 25,
+    "start": 330,
+    "end": 371,
+    "duration": 41,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N10-M.npy",
+    "class_id": 41,
+    "start": 371,
+    "end": 406,
+    "duration": 35,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 35,
+    "start": 185,
+    "end": 250,
+    "duration": 65,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 1,
+    "start": 274,
+    "end": 329,
+    "duration": 55,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 6,
+    "start": 329,
+    "end": 397,
+    "duration": 68,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 22,
+    "start": 397,
+    "end": 456,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 49,
+    "start": 500,
+    "end": 549,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 31,
+    "start": 589,
+    "end": 673,
+    "duration": 84,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A26N08-R.npy",
+    "class_id": 44,
+    "start": 673,
+    "end": 755,
+    "duration": 82,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 2,
+    "start": 64,
+    "end": 141,
+    "duration": 77,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 28,
+    "start": 157,
+    "end": 243,
+    "duration": 86,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 48,
+    "start": 243,
+    "end": 468,
+    "duration": 225,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 7,
+    "start": 468,
+    "end": 541,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 5,
+    "start": 541,
+    "end": 579,
+    "duration": 38,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N08-M.npy",
+    "class_id": 17,
+    "start": 609,
+    "end": 635,
+    "duration": 26,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 39,
+    "start": 255,
+    "end": 293,
+    "duration": 38,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 2,
+    "start": 326,
+    "end": 377,
+    "duration": 51,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 3,
+    "start": 377,
+    "end": 437,
+    "duration": 60,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 13,
+    "start": 451,
+    "end": 486,
+    "duration": 35,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 25,
+    "start": 517,
+    "end": 545,
+    "duration": 28,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A04N13-R.npy",
+    "class_id": 41,
+    "start": 669,
+    "end": 696,
+    "duration": 27,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A18N04-L.npy",
+    "class_id": 2,
+    "start": 164,
+    "end": 315,
+    "duration": 151,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A18N04-L.npy",
+    "class_id": 28,
+    "start": 328,
+    "end": 412,
+    "duration": 84,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N04-L.npy",
+    "class_id": 48,
+    "start": 444,
+    "end": 847,
+    "duration": 403,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      3
+    ]
+  },
+  {
+    "sequence": "A18N04-L.npy",
+    "class_id": 5,
+    "start": 847,
+    "end": 918,
+    "duration": 71,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A18N04-L.npy",
+    "class_id": 17,
+    "start": 918,
+    "end": 1001,
+    "duration": 83,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 34,
+    "start": 73,
+    "end": 83,
+    "duration": 10,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 32,
+    "start": 101,
+    "end": 180,
+    "duration": 79,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 17,
+    "start": 180,
+    "end": 215,
+    "duration": 35,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 19,
+    "start": 234,
+    "end": 249,
+    "duration": 15,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 15,
+    "start": 282,
+    "end": 300,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 41,
+    "start": 331,
+    "end": 408,
+    "duration": 77,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A17N08-M.npy",
+    "class_id": 11,
+    "start": 439,
+    "end": 451,
+    "duration": 12,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 20,
+    "start": 161,
+    "end": 247,
+    "duration": 86,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 33,
+    "start": 247,
+    "end": 321,
+    "duration": 74,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 30,
+    "start": 337,
+    "end": 397,
+    "duration": 60,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 23,
+    "start": 479,
+    "end": 573,
+    "duration": 94,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 4,
+    "start": 573,
+    "end": 659,
+    "duration": 86,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 46,
+    "start": 679,
+    "end": 773,
+    "duration": 94,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 34,
+    "start": 785,
+    "end": 803,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N11-R.npy",
+    "class_id": 32,
+    "start": 846,
+    "end": 912,
+    "duration": 66,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 47,
+    "start": 185,
+    "end": 235,
+    "duration": 50,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 13,
+    "start": 248,
+    "end": 330,
+    "duration": 82,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 30,
+    "start": 330,
+    "end": 415,
+    "duration": 85,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 8,
+    "start": 415,
+    "end": 506,
+    "duration": 91,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 25,
+    "start": 544,
+    "end": 598,
+    "duration": 54,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N12-L.npy",
+    "class_id": 23,
+    "start": 613,
+    "end": 647,
+    "duration": 34,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 2,
+    "start": 245,
+    "end": 355,
+    "duration": 110,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 39,
+    "start": 374,
+    "end": 427,
+    "duration": 53,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 44,
+    "start": 495,
+    "end": 582,
+    "duration": 87,
+    "category": "only_protas_missed",
+    "pieces": [
+      3,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 11,
+    "start": 582,
+    "end": 651,
+    "duration": 69,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 43,
+    "start": 651,
+    "end": 727,
+    "duration": 76,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A08N01-M.npy",
+    "class_id": 20,
+    "start": 742,
+    "end": 817,
+    "duration": 75,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 1,
+    "start": 70,
+    "end": 106,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 28,
+    "start": 139,
+    "end": 195,
+    "duration": 56,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 33,
+    "start": 215,
+    "end": 242,
+    "duration": 27,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 10,
+    "start": 283,
+    "end": 365,
+    "duration": 82,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 4,
+    "start": 365,
+    "end": 413,
+    "duration": 48,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 34,
+    "start": 413,
+    "end": 424,
+    "duration": 11,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A03N10-M.npy",
+    "class_id": 42,
+    "start": 456,
+    "end": 512,
+    "duration": 56,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 37,
+    "start": 162,
+    "end": 264,
+    "duration": 102,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 41,
+    "start": 264,
+    "end": 291,
+    "duration": 27,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 50,
+    "start": 355,
+    "end": 476,
+    "duration": 121,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 45,
+    "start": 534,
+    "end": 616,
+    "duration": 82,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 36,
+    "start": 616,
+    "end": 696,
+    "duration": 80,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A16N04-L.npy",
+    "class_id": 39,
+    "start": 764,
+    "end": 849,
+    "duration": 85,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 35,
+    "start": 80,
+    "end": 120,
+    "duration": 40,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 1,
+    "start": 194,
+    "end": 260,
+    "duration": 66,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 6,
+    "start": 278,
+    "end": 363,
+    "duration": 85,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 22,
+    "start": 363,
+    "end": 486,
+    "duration": 123,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 49,
+    "start": 486,
+    "end": 558,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 31,
+    "start": 569,
+    "end": 645,
+    "duration": 76,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N04-M.npy",
+    "class_id": 44,
+    "start": 645,
+    "end": 699,
+    "duration": 54,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 32,
+    "start": 182,
+    "end": 231,
+    "duration": 49,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 33,
+    "start": 280,
+    "end": 320,
+    "duration": 40,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 6,
+    "start": 332,
+    "end": 398,
+    "duration": 66,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 36,
+    "start": 398,
+    "end": 433,
+    "duration": 35,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 10,
+    "start": 505,
+    "end": 632,
+    "duration": 127,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 51,
+    "start": 645,
+    "end": 718,
+    "duration": 73,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      2
+    ]
+  },
+  {
+    "sequence": "A06N10-R.npy",
+    "class_id": 40,
+    "start": 718,
+    "end": 817,
+    "duration": 99,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 46,
+    "start": 115,
+    "end": 180,
+    "duration": 65,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 36,
+    "start": 180,
+    "end": 226,
+    "duration": 46,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 50,
+    "start": 226,
+    "end": 290,
+    "duration": 64,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 8,
+    "start": 312,
+    "end": 402,
+    "duration": 90,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 45,
+    "start": 402,
+    "end": 508,
+    "duration": 106,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 34,
+    "start": 541,
+    "end": 561,
+    "duration": 20,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A25N04-M.npy",
+    "class_id": 11,
+    "start": 561,
+    "end": 611,
+    "duration": 50,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 47,
+    "start": 199,
+    "end": 264,
+    "duration": 65,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 37,
+    "start": 280,
+    "end": 387,
+    "duration": 107,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 33,
+    "start": 402,
+    "end": 463,
+    "duration": 61,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 51,
+    "start": 482,
+    "end": 561,
+    "duration": 79,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 34,
+    "start": 561,
+    "end": 603,
+    "duration": 42,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 30,
+    "start": 647,
+    "end": 717,
+    "duration": 70,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A12N08-L.npy",
+    "class_id": 33,
+    "start": 717,
+    "end": 760,
+    "duration": 43,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 34,
+    "start": 52,
+    "end": 81,
+    "duration": 29,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 11,
+    "start": 532,
+    "end": 553,
+    "duration": 21,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 45,
+    "start": 674,
+    "end": 736,
+    "duration": 62,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 31,
+    "start": 736,
+    "end": 785,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 4,
+    "start": 800,
+    "end": 836,
+    "duration": 36,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 42,
+    "start": 912,
+    "end": 1009,
+    "duration": 97,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N12-L.npy",
+    "class_id": 43,
+    "start": 1009,
+    "end": 1040,
+    "duration": 31,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 34,
+    "start": 47,
+    "end": 70,
+    "duration": 23,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 36,
+    "start": 180,
+    "end": 205,
+    "duration": 25,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 50,
+    "start": 237,
+    "end": 293,
+    "duration": 56,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 39,
+    "start": 293,
+    "end": 360,
+    "duration": 67,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 34,
+    "start": 360,
+    "end": 382,
+    "duration": 22,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 48,
+    "start": 410,
+    "end": 455,
+    "duration": 45,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 28,
+    "start": 520,
+    "end": 589,
+    "duration": 69,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A13N11-M.npy",
+    "class_id": 39,
+    "start": 589,
+    "end": 621,
+    "duration": 32,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 6,
+    "start": 551,
+    "end": 610,
+    "duration": 59,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 23,
+    "start": 630,
+    "end": 689,
+    "duration": 59,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 8,
+    "start": 702,
+    "end": 751,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 9,
+    "start": 783,
+    "end": 811,
+    "duration": 28,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 45,
+    "start": 841,
+    "end": 946,
+    "duration": 105,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 30,
+    "start": 946,
+    "end": 1009,
+    "duration": 63,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A21N12-L.npy",
+    "class_id": 40,
+    "start": 1009,
+    "end": 1059,
+    "duration": 50,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 35,
+    "start": 133,
+    "end": 195,
+    "duration": 62,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 1,
+    "start": 287,
+    "end": 324,
+    "duration": 37,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 6,
+    "start": 324,
+    "end": 367,
+    "duration": 43,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 22,
+    "start": 381,
+    "end": 464,
+    "duration": 83,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 49,
+    "start": 480,
+    "end": 525,
+    "duration": 45,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 31,
+    "start": 554,
+    "end": 603,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A26N12-L.npy",
+    "class_id": 44,
+    "start": 615,
+    "end": 664,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 47,
+    "start": 218,
+    "end": 308,
+    "duration": 90,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 13,
+    "start": 308,
+    "end": 410,
+    "duration": 102,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 30,
+    "start": 410,
+    "end": 468,
+    "duration": 58,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 8,
+    "start": 468,
+    "end": 540,
+    "duration": 72,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 25,
+    "start": 558,
+    "end": 626,
+    "duration": 68,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N08-R.npy",
+    "class_id": 23,
+    "start": 668,
+    "end": 762,
+    "duration": 94,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 47,
+    "start": 302,
+    "end": 361,
+    "duration": 59,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 13,
+    "start": 361,
+    "end": 470,
+    "duration": 109,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 30,
+    "start": 470,
+    "end": 653,
+    "duration": 183,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 8,
+    "start": 653,
+    "end": 770,
+    "duration": 117,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 30,
+    "start": 770,
+    "end": 781,
+    "duration": 11,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 25,
+    "start": 781,
+    "end": 872,
+    "duration": 91,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 30,
+    "start": 872,
+    "end": 890,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A22N04-M.npy",
+    "class_id": 23,
+    "start": 890,
+    "end": 1072,
+    "duration": 182,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 99,
+    "end": 152,
+    "duration": 53,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 15,
+    "start": 152,
+    "end": 170,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 170,
+    "end": 186,
+    "duration": 16,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 17,
+    "start": 186,
+    "end": 218,
+    "duration": 32,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 218,
+    "end": 231,
+    "duration": 13,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 15,
+    "start": 231,
+    "end": 247,
+    "duration": 16,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 247,
+    "end": 266,
+    "duration": 19,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 17,
+    "start": 266,
+    "end": 290,
+    "duration": 24,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 290,
+    "end": 313,
+    "duration": 23,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 19,
+    "start": 313,
+    "end": 337,
+    "duration": 24,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 7,
+    "start": 337,
+    "end": 361,
+    "duration": 24,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N11-M.npy",
+    "class_id": 11,
+    "start": 361,
+    "end": 402,
+    "duration": 41,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 10,
+    "start": 407,
+    "end": 482,
+    "duration": 75,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 8,
+    "start": 482,
+    "end": 561,
+    "duration": 79,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 51,
+    "start": 561,
+    "end": 630,
+    "duration": 69,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 40,
+    "start": 630,
+    "end": 702,
+    "duration": 72,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 7,
+    "start": 702,
+    "end": 794,
+    "duration": 92,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 34,
+    "start": 794,
+    "end": 808,
+    "duration": 14,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 7,
+    "start": 808,
+    "end": 862,
+    "duration": 54,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A11N08-L.npy",
+    "class_id": 42,
+    "start": 866,
+    "end": 895,
+    "duration": 29,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 20,
+    "start": 120,
+    "end": 169,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 33,
+    "start": 169,
+    "end": 201,
+    "duration": 32,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 30,
+    "start": 250,
+    "end": 268,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 23,
+    "start": 328,
+    "end": 375,
+    "duration": 47,
+    "category": "only_protas_missed",
+    "pieces": [
+      3,
+      0
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 4,
+    "start": 375,
+    "end": 432,
+    "duration": 57,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      2
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 46,
+    "start": 445,
+    "end": 498,
+    "duration": 53,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 34,
+    "start": 498,
+    "end": 517,
+    "duration": 19,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A15N08-M.npy",
+    "class_id": 32,
+    "start": 531,
+    "end": 575,
+    "duration": 44,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 34,
+    "start": 137,
+    "end": 148,
+    "duration": 11,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 11,
+    "start": 252,
+    "end": 291,
+    "duration": 39,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 45,
+    "start": 402,
+    "end": 462,
+    "duration": 60,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 31,
+    "start": 462,
+    "end": 509,
+    "duration": 47,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 4,
+    "start": 509,
+    "end": 571,
+    "duration": 62,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 42,
+    "start": 571,
+    "end": 647,
+    "duration": 76,
+    "category": "only_mstcn_missed",
+    "pieces": [
+      0,
+      1
+    ]
+  },
+  {
+    "sequence": "A20N08-R.npy",
+    "class_id": 43,
+    "start": 647,
+    "end": 733,
+    "duration": 86,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 32,
+    "start": 151,
+    "end": 200,
+    "duration": 49,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 33,
+    "start": 226,
+    "end": 244,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 6,
+    "start": 244,
+    "end": 281,
+    "duration": 37,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 36,
+    "start": 281,
+    "end": 321,
+    "duration": 40,
+    "category": "both_missed",
+    "pieces": [
+      0,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 10,
+    "start": 321,
+    "end": 411,
+    "duration": 90,
+    "category": "only_protas_missed",
+    "pieces": [
+      2,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 51,
+    "start": 411,
+    "end": 451,
+    "duration": 40,
+    "category": "only_protas_missed",
+    "pieces": [
+      1,
+      0
+    ]
+  },
+  {
+    "sequence": "A06N06-M.npy",
+    "class_id": 40,
+    "start": 469,
+    "end": 634,
+    "duration": 165,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 7,
+    "start": 578,
+    "end": 666,
+    "duration": 88,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 15,
+    "start": 666,
+    "end": 791,
+    "duration": 125,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      2
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 17,
+    "start": 791,
+    "end": 861,
+    "duration": 70,
+    "category": "neither_missed",
+    "pieces": [
+      2,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 15,
+    "start": 861,
+    "end": 946,
+    "duration": 85,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      4
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 17,
+    "start": 946,
+    "end": 1010,
+    "duration": 64,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 19,
+    "start": 1042,
+    "end": 1060,
+    "duration": 18,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  },
+  {
+    "sequence": "A09N01-R.npy",
+    "class_id": 11,
+    "start": 1089,
+    "end": 1138,
+    "duration": 49,
+    "category": "neither_missed",
+    "pieces": [
+      1,
+      1
+    ]
+  }
+]

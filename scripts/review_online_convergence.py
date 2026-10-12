@@ -15,7 +15,8 @@ def score(row):
 def main():
     runs = [('mstcn_pku_dev_seed17', 'mstcn'),
             ('mstcn_pku_dev_e100_resume_seed17', 'mstcn'),
-            ('protas_pku_fixedgraph_dev_seed17', 'protas')]
+            ('protas_pku_fixedgraph_dev_seed17', 'protas'),
+            ('protas_pku_fixedgraph_e100_resume_seed17', 'protas')]
     result = {}
     for name, kind in runs:
         folder = ROOT / 'runs' / name
@@ -40,11 +41,15 @@ def main():
     base, continued = [json.loads((ROOT / 'runs' / name / 'mstcn/history.json').read_text())
                       for name in [runs[0][0], runs[1][0]]]
     assert base == continued[:len(base)], 'Continuation does not preserve original history'
+    protas_base, protas_continued = [json.loads((ROOT / 'runs' / name / 'protas/history.json').read_text())
+                                   for name in [runs[2][0], runs[3][0]]]
+    assert protas_base == protas_continued[:len(protas_base)]
     assert len({r['split_sha256'] for r in result.values()}) == 1
     assert all(r['selected'] == result[runs[0][0]]['selected'] for r in result.values())
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / 'convergence.json').write_text(json.dumps(dict(scope='Saved train/val logs only',
         identical_selected_data=True, mstcn_continuation_prefix_verified=True,
+        protas_continuation_prefix_verified=True,
         runs=result), indent=2), encoding='utf-8')
     for name, r in result.items():
         print(name, 'best epoch', r['best_epoch'], 'score', round(r['best_score'], 2))
