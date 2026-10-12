@@ -9,7 +9,7 @@ import torch
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from baseline import Meter,build_model,load_sequence,predict_logits
+from baseline import Meter,OfficialMeter,build_model,load_sequence,predict_logits
 from normalization import TrainingStandardizer,feature_validity
 from spatial_encoders import build_spatial_model
 
@@ -19,9 +19,12 @@ parser.add_argument('--model',choices=['mstcn','protas','both'],default='both')
 parser.add_argument('--checkpoint',choices=['best','last'],default='last')
 parser.add_argument('--split',choices=['val','test'],default='val')
 parser.add_argument('--device',choices=['cpu','cuda'],default='cuda')
+parser.add_argument('--output-suffix',default='',help='Save supplemental evaluation without replacing earlier files')
 args=parser.parse_args()
 if Path(args.run).name!=args.run:
     parser.error('run must be a directory name')
+if args.output_suffix and not all(c.isalnum() or c=='_' for c in args.output_suffix):
+    parser.error('Output suffix must be alphanumeric/underscore')
 run=ROOT/'runs'/args.run
 config=json.loads((run/'config.json').read_text())
 if args.device=='cuda' and not torch.cuda.is_available():raise RuntimeError('CUDA unavailable')
@@ -45,9 +48,10 @@ output={'run':args.run,'evaluation_split':args.split,'checkpoint_rule':args.chec
 for kind in (['mstcn','protas'] if args.model=='both' else [args.model]):
     path=run/kind/f'{args.checkpoint}.pt'
     ckpt=torch.load(path,map_location=args.device,weights_only=True)
-    model=(build_spatial_model(config.get('spatial_encoder','linear'),config['stages'],config['layers'],config['width']) if kind=='mstcn' else build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width'])).to(args.device).eval()
+    mode=config.get('graph_reference','independent_copy')
+    model=(build_spatial_model(config.get('spatial_encoder','linear'),config['stages'],config['layers'],config['width']) if kind=='mstcn' else build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width'],graph_reference=mode)).to(args.device).eval()
     model.load_state_dict(ckpt['model'],strict=True)
-    meters={'foreground_canonical':Meter(),'dest_legacy':Meter(legacy=True)}
+    meters={'foreground_canonical':Meter(),'dest_legacy':Meter(legacy=True),'protas_official':OfficialMeter()}
     rows=[]
     with torch.inference_mode():
         for i,name in enumerate(names):
@@ -64,6 +68,7 @@ for kind in (['mstcn','protas'] if args.model=='both' else [args.model]):
     output['models'][kind]={'epoch':ckpt['epoch'],'checkpoint_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
         'scores':{name:meter.scores() for name,meter in meters.items()},'per_sequence':rows}
     print(json.dumps({kind:output['models'][kind]['scores']},indent=2),flush=True)
-target=run/f'{args.split}_{args.checkpoint}_evaluation.json'
+suffix=f'_{args.output_suffix}' if args.output_suffix else ''
+target=run/f'{args.split}_{args.checkpoint}_evaluation{suffix}.json'
 target.write_text(json.dumps(output,indent=2),encoding='utf-8')
 print(f'Saved: {target}',flush=True)

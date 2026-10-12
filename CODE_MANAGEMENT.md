@@ -1,5 +1,7 @@
 # 代码与实验管理
 
+2026-10-12补充：任务图审计及官方模式/补充评价开发在analysis/protas-task-graph-audit分支进行。baseline.py现增加可选graph_reference和OfficialMeter，旧默认行为保留；官方模式的GPU存储核查纠正与结果见reports/protas_official_audit/SUPPLEMENT_IMPLEMENTATION.md。以下空间筛查阶段“baseline不改”描述属于历史阶段约束。
+
 本项目目录原无 Git，于空间编码筛查开始前初始化本地仓库。
 
 - `main`：已有因果 MS-TCN/ProTAS 适配、统一输入评测与续训代码的基准快照，提交 `f322ff4`。这是历史代码快照，不表示所有历史方案已经验证有效。

@@ -12,7 +12,7 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from baseline import DATA, Meter, build_model, load_sequence, make_graph, predict_logits, progress_targets, training_loss
+from baseline import DATA, Meter, OfficialMeter, build_model, load_sequence, make_graph, predict_logits, progress_targets, training_loss
 from normalization import TrainingStandardizer, feature_validity
 from spatial_encoders import build_spatial_model
 
@@ -38,6 +38,7 @@ def main():
     parser.add_argument('--resume-from',help='Existing run to continue from last.pt into a NEW run directory')
     parser.add_argument('--check-resume',action='store_true',help='Validate resume compatibility only; do not train or create a run')
     parser.add_argument('--spatial-encoder',choices=['linear','mlp','gcn'],default='linear')
+    parser.add_argument('--graph-reference',choices=['independent_copy','official'],default='independent_copy')
     args = parser.parse_args()
     if args.spatial_encoder != 'linear' and args.model != 'mstcn':
         parser.error('Experimental spatial encoders support MS-TCN only')
@@ -74,6 +75,8 @@ def main():
             parser.error('Resume currently supports one model, full sequences, and separate validation only')
         resume_run = ROOT/'runs'/args.resume_from
         old = json.loads((resume_run/'config.json').read_text())
+        if old.get('graph_reference','independent_copy') != args.graph_reference:
+            raise ValueError('Cannot resume with different graph reference behavior')
         if old.get('spatial_encoder','linear') != args.spatial_encoder:
             raise ValueError('Resume spatial encoder mismatch')
         for key in ['seed','stages','layers','width','lr','normalization','clip','trainval','batch_size']:
@@ -145,7 +148,7 @@ def main():
         random.seed(args.seed)
         folder = run/kind
         folder.mkdir()
-        model = (build_spatial_model(args.spatial_encoder,args.stages,args.layers,args.width) if kind=='mstcn' else build_model(kind,graph_path,args.stages,args.layers,args.width)).to(args.device)
+        model = (build_spatial_model(args.spatial_encoder,args.stages,args.layers,args.width) if kind=='mstcn' else build_model(kind,graph_path,args.stages,args.layers,args.width,graph_reference=args.graph_reference)).to(args.device)
         optimizer = torch.optim.Adam(model.parameters(),lr=args.lr)
         rng = np.random.default_rng(args.seed)
         history,best = [],-float('inf')
@@ -197,6 +200,7 @@ def main():
                 continue
             model.eval()
             canonical,legacy = Meter(),Meter(legacy=True)
+            official = OfficialMeter()
             first_stage = Meter()
             predicted_background = true_background = foreground_correct = foreground_frames = validation_frames = 0
             predicted_classes = set()
@@ -210,6 +214,7 @@ def main():
                     pred = logits.argmax(1)[0].cpu().numpy()
                     canonical.update(pred,labels)
                     legacy.update(pred,labels)
+                    official.update(pred,labels)
                     first_stage.update(outputs[0].argmax(1)[0].cpu().numpy(),labels)
                     predicted_background += int((pred==0).sum())
                     true_background += int((labels==0).sum())
@@ -219,7 +224,7 @@ def main():
                     predicted_classes.update(map(int,np.unique(pred)))
             scores = canonical.scores()
             record = dict(epoch=epoch,loss=float(np.mean(losses)),seconds=time.perf_counter()-begin,
-                          foreground_canonical=scores,dest_legacy=legacy.scores())
+                          foreground_canonical=scores,dest_legacy=legacy.scores(),protas_official=official.scores())
             record['validation_diagnostics'] = dict(predicted_background_fraction=predicted_background/validation_frames,
                     true_background_fraction=true_background/validation_frames,foreground_accuracy=100*foreground_correct/max(1,foreground_frames),
                     predicted_classes=sorted(predicted_classes),first_stage_raw=first_stage.scores())

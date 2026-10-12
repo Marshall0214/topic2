@@ -165,11 +165,15 @@ class CausalMSTCN(nn.Module):
         return torch.stack(outputs), None
 
 
-def build_model(kind,graph_path=None,stages=4,layers=10,width=64):
+def build_model(kind,graph_path=None,stages=4,layers=10,width=64,graph_reference='independent_copy'):
     if kind == 'mstcn':
         return CausalMSTCN(stages,layers,width)
     model = PROTAS.MultiStageModel(stages,layers,width,300,52,causal=True,use_graph=True,
                                   init_graph_path=str(graph_path),learnable=True)
+    if graph_reference == 'official':
+        return model
+    if graph_reference != 'independent_copy':
+        raise ValueError('Unknown ProTAS graph reference mode')
     graph = model.graph_learner
     # Official original Parameters alias trainable storage: make fixed snapshots
     # true buffers so graph regularization has the intended nonzero reference.
@@ -178,6 +182,32 @@ def build_model(kind,graph_path=None,stages=4,layers=10,width=64):
         delattr(graph,name)
         graph.register_buffer(name,value)
     return model
+
+
+class OfficialMeter(Meter):
+    """Official ProTAS Edit plus foreground accuracy; ID0 maps to background."""
+    def __init__(self):
+        super().__init__()
+        self.foreground_correct = self.foreground_frames = 0
+
+    def update(self,pred,y):
+        pred,y = np.asarray(pred),np.asarray(y)
+        old_edit = self.edit
+        super().update(pred,y)
+        # Official eval.py removes background BEFORE merging repeated labels.
+        pl,_,_ = segments(pred[pred != 0],exclude_background=False)
+        gl,_,_ = segments(y[y != 0],exclude_background=False)
+        self.edit = old_edit + edit_score(pl,gl)
+        foreground = y != 0
+        self.foreground_frames += int(foreground.sum())
+        self.foreground_correct += int(((pred == y) & foreground).sum())
+
+    def scores(self):
+        result = super().scores()
+        result['foreground_accuracy'] = (100*self.foreground_correct/self.foreground_frames
+                                         if self.foreground_frames else None)
+        result['foreground_frames'] = self.foreground_frames
+        return result
 
 
 def predict_logits(model,kind,x,mask):

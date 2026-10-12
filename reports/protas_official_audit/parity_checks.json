@@ -40,5 +40,13 @@
       "path": "utils/write_progress_values.py",
       "matches_pinned_manifest": true
     }
-  ]
+  ],
+  "official_metric_parity": true,
+  "gpu_official_vs_copy": {
+    "official_reference_alias_after_cuda": false,
+    "one_step_loss_error": 0.0,
+    "gradient_max_error": 2.60770320892334e-08,
+    "one_step_state_max_error": 1.811794936656952e-05,
+    "note": "CPU shared storage separates on CUDA conversion in this runtime; CPU-only alias conclusion does not apply to completed GPU training"
+  }
 }

@@ -1,5 +1,7 @@
 # ProTAS 官方一致性审计
 
+> 2026-10-12后续GPU核查更正：下文参考矩阵共享及正则为0的观察仅适用于刚构建的CPU模型。官方执行model.to(cuda)后，本机PyTorch将两份Parameter存储分离，正则生效。因此不能据CPU实验断言已完成的GPU训练改变了正则目标，也不应仅为此要求重新训练。最新实现、GPU数值验收及补充指标见 SUPPLEMENT_IMPLEMENTATION.md。保留下文作为此前审计记录，其“优先重训官方行为对照”的建议已撤回。
+
 2026-10-12。官方 https://github.com/Yuhan-Shen/ProTAS 。固定上游commit见sources/manifest.json。本轮没有修改适配模型或启动训练。
 
 ## 源码核对
