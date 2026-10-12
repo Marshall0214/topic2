@@ -1,0 +1,15 @@
+{
+  "train_val": 0,
+  "train_test": 0,
+  "val_test": 117,
+  "train_equals_our_train_plus_val": true,
+  "val_subset_test": true,
+  "val_examples": [
+    "A01N02-L.npy",
+    "A01N02-M.npy",
+    "A01N02-R.npy",
+    "A01N03-L.npy",
+    "A01N03-M.npy",
+    "A01N03-R.npy"
+  ]
+}

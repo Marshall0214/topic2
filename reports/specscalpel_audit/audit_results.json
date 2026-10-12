@@ -1,0 +1,59 @@
+{
+  "commit": "01adb1ed708d410023b8482c52270cac358c8525",
+  "source_hash_mismatches": [],
+  "counts": {
+    "train": 775,
+    "val": 117,
+    "test": 234
+  },
+  "val_test_overlap": 117,
+  "val_subset_test": true,
+  "train_equals_local_train_plus_val": true,
+  "test_equals_local_test": true,
+  "model_probe": {
+    "scope": "Untrained, synthetic input and identity graph; no accuracy or training claim",
+    "device": "cuda:0",
+    "parameters": 1505484,
+    "shapes": [
+      [
+        1,
+        52,
+        160
+      ],
+      [
+        1,
+        1,
+        160
+      ]
+    ],
+    "finite": true,
+    "future_change_past_logits_max_difference": 0.015614598989486694
+  },
+  "metric_probe": {
+    "mapping": {
+      "0": "NONE",
+      "1": "action"
+    },
+    "input": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "segments": [
+      [
+        "NONE",
+        "action"
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "interpretation": "NONE included; final end index is 3 for a 4-frame sequence"
+  }
+}

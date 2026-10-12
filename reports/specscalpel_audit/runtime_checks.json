@@ -1,0 +1,52 @@
+{
+  "split_checks": {
+    "train": {
+      "count": 775,
+      "same_set_as_local": false,
+      "duplicates": 0,
+      "missing_local_files": {
+        "feature": 0,
+        "label": 0,
+        "boundary": 0
+      }
+    },
+    "val": {
+      "count": 117,
+      "same_set_as_local": false,
+      "duplicates": 0,
+      "missing_local_files": {
+        "feature": 0,
+        "label": 0,
+        "boundary": 0
+      }
+    },
+    "test": {
+      "count": 234,
+      "same_set_as_local": true,
+      "duplicates": 0,
+      "missing_local_files": {
+        "feature": 0,
+        "label": 0,
+        "boundary": 0
+      }
+    }
+  },
+  "model": {
+    "parameters": 1505484,
+    "eval_output_shapes": [
+      [
+        1,
+        52,
+        160
+      ],
+      [
+        1,
+        1,
+        160
+      ]
+    ],
+    "finite": true,
+    "future_perturbation_past_logit_max_error": 0.3968759775161743,
+    "scope": "Untrained model; synthetic identity joint graph, not accuracy verification"
+  }
+}
