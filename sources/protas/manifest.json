@@ -1,0 +1,43 @@
+{
+  "name": "protas",
+  "repository": "https://github.com/Yuhan-Shen/ProTAS",
+  "commit": "0f04ee6b3c4370ce22f9230bca42e9aabe47b428",
+  "license": null,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3018,
+      "sha256": "6707da8dec9a23083842a2173694bbf1f5697f041354a9028f904dd2cfa18916"
+    },
+    {
+      "path": "batch_gen.py",
+      "bytes": 3149,
+      "sha256": "31d99986bb6469741cfe9775b76f85c0659e7fe246028bcca28421ad5d8a5881"
+    },
+    {
+      "path": "eval.py",
+      "bytes": 6338,
+      "sha256": "62c3b2077a9726afc615c312ddf7474475f724b4a609b694c937430b68909624"
+    },
+    {
+      "path": "main.py",
+      "bytes": 5147,
+      "sha256": "66cdfcab115b0adf933e4378b83c571818d0c13b8116da5826ae3e12c12776f4"
+    },
+    {
+      "path": "model.py",
+      "bytes": 13245,
+      "sha256": "dd42974e5dbc9d496a3cd111617c4a7d14aeae8107d3a88aaedfd2b60f3f6423"
+    },
+    {
+      "path": "utils/write_graph.py",
+      "bytes": 2758,
+      "sha256": "3b9b6901f8b883678a4a026bbc597c0e0d5f273dfe858515e8876aa02a5d6ad5"
+    },
+    {
+      "path": "utils/write_progress_values.py",
+      "bytes": 2341,
+      "sha256": "cb377d87c5398445dca8fe5363445b7a4e710a06788c0ab73246661283d22aa2"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "purpose": "Tiny trainval/evaluator software check using previously inspected development sequences; not a paper split or new held-out test",
+  "splits": {
+    "train": ["A02N09-M.npy", "A07N05-R.npy"],
+    "val": ["A01N11-R.npy", "A16N05-R.npy"],
+    "test": ["A15N08-L.npy", "A17N05-R.npy"]
+  }
+}

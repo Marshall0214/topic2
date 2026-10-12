@@ -1,0 +1,23 @@
+{
+  "sha": "6945f9dba176869f17c132333e95a24d30d1bbc7",
+  "url": "https://api.github.com/repos/zczheng777/DPTM/git/trees/6945f9dba176869f17c132333e95a24d30d1bbc7",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "452be6ce956104c8f337cfd8f514ea269e558e63",
+      "size": 1065,
+      "url": "https://api.github.com/repos/zczheng777/DPTM/git/blobs/452be6ce956104c8f337cfd8f514ea269e558e63"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25cf0bea1501c87e2530af83b6ad0e123d21062f",
+      "size": 91,
+      "url": "https://api.github.com/repos/zczheng777/DPTM/git/blobs/25cf0bea1501c87e2530af83b6ad0e123d21062f"
+    }
+  ],
+  "truncated": false
+}

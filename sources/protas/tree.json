@@ -1,0 +1,70 @@
+{
+  "sha": "0f04ee6b3c4370ce22f9230bca42e9aabe47b428",
+  "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/trees/0f04ee6b3c4370ce22f9230bca42e9aabe47b428",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d43b0bee9e2bc19959543af9ca74aae3b3e7f887",
+      "size": 3018,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/d43b0bee9e2bc19959543af9ca74aae3b3e7f887"
+    },
+    {
+      "path": "batch_gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03006e2a44c298000e84b9d519ba481be0240d93",
+      "size": 3149,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/03006e2a44c298000e84b9d519ba481be0240d93"
+    },
+    {
+      "path": "eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e2209ce98f68d476836ae2fe1a759778182f995",
+      "size": 6338,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/6e2209ce98f68d476836ae2fe1a759778182f995"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9e682e2edd1b1a4795d9d5ff6af63c5d8d22e8d",
+      "size": 5147,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/f9e682e2edd1b1a4795d9d5ff6af63c5d8d22e8d"
+    },
+    {
+      "path": "model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "390762cecf74c884328ce5c11356ddcdd940c994",
+      "size": 13245,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/390762cecf74c884328ce5c11356ddcdd940c994"
+    },
+    {
+      "path": "utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "546070014da51d46e2446c9402ec72fd79e41234",
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/trees/546070014da51d46e2446c9402ec72fd79e41234"
+    },
+    {
+      "path": "utils/write_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b05a1553e0d848e7c16bc47ea1fdaf67cb9cfd8f",
+      "size": 2758,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/b05a1553e0d848e7c16bc47ea1fdaf67cb9cfd8f"
+    },
+    {
+      "path": "utils/write_progress_values.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb9a32d8f5a221c7b16d78364f118eb901c8ddc8",
+      "size": 2341,
+      "url": "https://api.github.com/repos/Yuhan-Shen/ProTAS/git/blobs/fb9a32d8f5a221c7b16d78364f118eb901c8ddc8"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "input_checks": true,
+  "canonical_edge_cases": true,
+  "legacy_parity": true,
+  "progress_and_training_graph_checks": true,
+  "model_errors": {
+    "mstcn": {
+      "future_error": 0.0,
+      "prefix_error": 1.6391277313232422e-07,
+      "state_isolation_error": 0.0,
+      "parameters": 703440
+    },
+    "protas": {
+      "future_error": 0.0,
+      "prefix_error": 8.940696716308594e-08,
+      "state_isolation_error": 0.0,
+      "parameters": 844048
+    }
+  },
+  "scope": "Untrained models with nonzero synthetic training graph; no task accuracy claim; prefix replay, not cached streaming"
+}

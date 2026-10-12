@@ -1,0 +1,55 @@
+{
+  "sha": "33ed91c0c7576650a2367efc602553af4c5295b1",
+  "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/trees/33ed91c0c7576650a2367efc602553af4c5295b1",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb0e14b9b8952e20c74892c49ea649abb9d33b0",
+      "size": 1995,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/dfb0e14b9b8952e20c74892c49ea649abb9d33b0"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4707555765e13f28c9d5a3b2a3ca3b918ba0a17e",
+      "size": 1814,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/4707555765e13f28c9d5a3b2a3ca3b918ba0a17e"
+    },
+    {
+      "path": "batch_gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8a7428838332f04a565bbd46f4d4651fc9c01ce",
+      "size": 2417,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/c8a7428838332f04a565bbd46f4d4651fc9c01ce"
+    },
+    {
+      "path": "eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2226e428a6c097ccb5db43c5ecfee45c05b0f633",
+      "size": 4436,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/2226e428a6c097ccb5db43c5ecfee45c05b0f633"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d377e9b254ff5ca02a0f7aebb4c590ac207ace",
+      "size": 2166,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/89d377e9b254ff5ca02a0f7aebb4c590ac207ace"
+    },
+    {
+      "path": "model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0cd70bd557465a0693b0d8af9d0fa136bc913aa",
+      "size": 5598,
+      "url": "https://api.github.com/repos/yabufarha/ms-tcn/git/blobs/c0cd70bd557465a0693b0d8af9d0fa136bc913aa"
+    }
+  ],
+  "truncated": false
+}

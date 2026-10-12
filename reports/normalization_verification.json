@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "valid_channel_center_and_scale": true,
+  "missing_body_stays_zero": true,
+  "displacement_gap_stays_zero": true,
+  "fixed_statistics_future_invariance": true,
+  "serialization_roundtrip": true,
+  "note": "Training entry fits selected train list only; no clipping; floor=1e-3; unseen channels use mean0,scale1."
+}

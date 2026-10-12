@@ -1,0 +1,42 @@
+{
+  "name": "dptm_reference_pku",
+  "status": "local reference protocol; not an exact reproduction of Table 7",
+  "split": "configs/dest_compat.json",
+  "models": [
+    "mstcn",
+    "protas"
+  ],
+  "train_limit": 0,
+  "val_limit": 0,
+  "epochs": 50,
+  "clip": 0,
+  "seed": 17,
+  "stages": 4,
+  "layers": 10,
+  "width": 64,
+  "lr": 0.0005,
+  "normalization": "none",
+  "trainval": false,
+  "input": "300D per-person root-relative XYZ and causal backward displacement; local choice, not disclosed by DPTM",
+  "adapter": "existing first-stage Conv1d(300,64,kernel_size=1)",
+  "metrics": [
+    "accuracy",
+    "edit",
+    "f1_10",
+    "f1_25",
+    "f1_50",
+    "avg"
+  ],
+  "checkpoint_reporting": [
+    "best"
+  ],
+  "notes": [
+    "Development protocol:698 train,77 validation,234 test; retain all three published splits. DPTM exact file lists unverified.",
+    "Select best checkpoint by foreground_canonical (Edit+F1@50)/2 on validation only; test never selects checkpoints.",
+    "No 128/8 filtering,no normalization tuning,no extra spatial encoder.",
+    "50 baseline epochs follows local frozen protocol and ProTAS default; DPTM two stages of 50 do not apply to these baselines.",
+    "Trainval is deferred until method and hyperparameters are frozen; disabled in the current launcher.",
+    "Keep both foreground canonical and DeST legacy metrics; DPTM background handling unverified.",
+    "LARA is the planned second benchmark; data availability must be checked separately."
+  ]
+}

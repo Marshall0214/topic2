@@ -1,0 +1,36 @@
+{
+  "device": "cpu",
+  "torch": "2.8.0+cu126",
+  "tolerance": 1e-05,
+  "training": false,
+  "protas": {
+    "configuration": "official 4 stages,10 layers,64 channels;dim=300,52 classes; synthetic zero graph",
+    "parameters": 844048,
+    "output_shape": [
+      1,
+      52,
+      33
+    ],
+    "future_perturbation_error": 0.0,
+    "prefix_errors": {
+      "0": 6.705522537231445e-08,
+      "1": 7.450580596923828e-08,
+      "7": 8.940696716308594e-08,
+      "16": 8.940696716308594e-08,
+      "32": 0.0
+    },
+    "repeat_error": 0.0,
+    "passes": true
+  },
+  "mstcn_offline_control": {
+    "future_perturbation_change": 1.2032687664031982e-05,
+    "detected_future_dependency": true,
+    "loader": "Only unchanged model definitions before Python-2 Trainer were executed."
+  },
+  "limitations": [
+    "Untrained synthetic inputs; no accuracy conclusions.",
+    "Zero graph tests model and cumulative graph inference shape only; learned nonzero graph still requires checking.",
+    "Prefix replay is not cached streaming inference and cannot establish constant per-frame cost.",
+    "Not a reproduction of DPTM skeleton input preprocessing."
+  ]
+}

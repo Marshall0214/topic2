@@ -1,0 +1,44 @@
+{
+  "name": "mstcn",
+  "repository": "https://github.com/yabufarha/ms-tcn",
+  "commit": "33ed91c0c7576650a2367efc602553af4c5295b1",
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1995,
+      "sha256": "35b7a9d745f2117f13d8acbb6072d9dc4cdbcf0572078a13f4e0969167522d32"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1814,
+      "sha256": "8fe34d82be4267a40b01a1ff81a74034ffcdae60fa636cfbe8e00af826d77675"
+    },
+    {
+      "path": "batch_gen.py",
+      "bytes": 2417,
+      "sha256": "50f47999f8e2089b085bc69a8678e1bd1df50793b1e09ceefc46beb0c0d9e11e"
+    },
+    {
+      "path": "eval.py",
+      "bytes": 4436,
+      "sha256": "c3d1a67f485ce0c8f29964208878bb824c433084216fc05e486ef72d4166f226"
+    },
+    {
+      "path": "main.py",
+      "bytes": 2166,
+      "sha256": "be59f50dfbfc3fd80b275d331bc1b5d1ffd2f84fb450fa4de9a4d84439cfd12d"
+    },
+    {
+      "path": "model.py",
+      "bytes": 5598,
+      "sha256": "bf69c1480eee28ed33e669de9e2dfd587dfdda26bd7239b1be752d12a7824652"
+    }
+  ]
+}
