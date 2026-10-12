@@ -57,10 +57,11 @@ def main():
     parser.add_argument('--train-limit', type=int, default=4)
     parser.add_argument('--val-limit', type=int, default=2)
     parser.add_argument('--batch-size', type=int, default=2)
+    parser.add_argument('--epochs', type=int, default=1)
     args = parser.parse_args()
     if Path(args.run).name != args.run or args.run in ('.', '..'):
         parser.error('Use a new simple run name')
-    if min(args.train_limit, args.val_limit, args.batch_size) < 1:
+    if min(args.train_limit, args.val_limit, args.batch_size, args.epochs) < 1:
         parser.error('Positive smoke-check limits required')
     if not torch.cuda.is_available():
         raise RuntimeError('CUDA required for official training helper')
@@ -140,11 +141,48 @@ def main():
                         shuffle=False, num_workers=0, collate_fn=collate_fn)
     # Calls the pinned upstream helper, including CE/GSTMSE, boundary, text contrast,
     # and the adjacent-action frequency discrepancy loss without replacements.
-    loss = train(loader, model, actions, action_graph, joint_graph, cls, bound,
-                 contrast, torch.nn.BCEWithLogitsLoss(), .1, optimizer, 0, 'PKU-subject')
-    torch.cuda.synchronize()
-    train_seconds = time.perf_counter() - start
-    assert np.isfinite(loss)
+    history, best_score = [], -float('inf')
+    train_seconds = 0.
+    (out / 'config.json').write_text(json.dumps(dict(args=vars(args), selected=chosen,
+        split_sha256=hashlib.sha256(split_path.read_bytes()).hexdigest(),
+        selection_rule='(raw canonical Edit + raw F1@50)/2'), indent=2), encoding='utf-8')
+    for epoch in range(1, args.epochs + 1):
+        start = time.perf_counter()
+        loss = train(loader, model, actions, action_graph, joint_graph, cls, bound,
+                     contrast, torch.nn.BCEWithLogitsLoss(), .1, optimizer, 0, 'PKU-subject')
+        torch.cuda.synchronize()
+        seconds = time.perf_counter() - start
+        train_seconds += seconds
+        assert np.isfinite(loss)
+        model.eval()
+        canonical, foreground = Meter(), OfficialMeter()
+        background_frames = frames = 0
+        with torch.no_grad():
+            for sample in DataLoader(datasets['val'], batch_size=1, collate_fn=collate_fn):
+                logits, boundary = model(sample['feature'].cuda(), sample['mask'].cuda(), joint_graph)
+                assert torch.isfinite(logits).all() and torch.isfinite(boundary).all()
+                pred, target = logits.argmax(1).cpu().numpy()[0], sample['label'].numpy()[0]
+                canonical.update(pred, target)
+                foreground.update(pred, target)
+                background_frames += int((pred == 0).sum())
+                frames += len(pred)
+        scores = canonical.scores()
+        score = (scores['edit'] + scores['f1_50']) / 2
+        record = dict(epoch=epoch, loss=loss, train_seconds=seconds,
+            validation=scores, foreground_accuracy=foreground.scores()['foreground_accuracy'],
+            predicted_background_ratio=background_frames / frames)
+        history.append(record)
+        (out / 'history.json').write_text(json.dumps(history, indent=2), encoding='utf-8')
+        checkpoint = dict(model=model.state_dict(), optimizer=optimizer.state_dict(), epoch=epoch,
+                          args=vars(args), selected=chosen, validation_score=score)
+        torch.save(checkpoint, out / 'last.pt')
+        if score > best_score:
+            best_score = score
+            torch.save(checkpoint, out / 'best.pt')
+        print(f'Epoch {epoch}/{args.epochs} loss={loss:.4f} '
+              f'Acc={scores["accuracy"]:.2f} FGAcc={record["foreground_accuracy"]:.2f} '
+              f'Edit={scores["edit"]:.2f} F1@50={scores["f1_50"]:.2f} '
+              f'pred_bg={record["predicted_background_ratio"]:.1%}', flush=True)
     for handle in handles:
         handle.remove()
     assert all(torch.isfinite(p).all() for p in model.parameters())
@@ -185,6 +223,7 @@ def main():
         official_protas_supplement_raw=supplement.scores(), strict_checkpoint_reload=True,
         input_protocol='Official offline future displacement and relative XYZ; text prior',
         future_selection_rule='Unchanged: (raw canonical Edit + raw F1@50)/2')
+    result['history'] = history
     result['compatibility'] = 'Only postprocess argrelmax np.bool -> np.bool_; upstream files unchanged'
     (out / 'verification.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
     print(json.dumps(result, indent=2), flush=True)
