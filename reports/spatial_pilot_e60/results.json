@@ -1,0 +1,130 @@
+{
+  "protocol": {
+    "run_prefix": "spatial_pilot128_val24_e60_seed17_v1",
+    "encoders": [
+      "linear",
+      "mlp",
+      "gcn"
+    ],
+    "split": "configs/dest_compat.json",
+    "train_limit": 128,
+    "val_limit": 24,
+    "epochs": 60,
+    "seed": 17,
+    "stages": 4,
+    "layers": 10,
+    "width": 64,
+    "lr": 0.0005,
+    "normalization": "none",
+    "selection": "validation foreground (Edit+F1@50)/2",
+    "test_evaluation": false
+  },
+  "train_sequences": 128,
+  "val_sequences": 24,
+  "test_evaluated": false,
+  "selection_verified_identical": true,
+  "results": [
+    {
+      "encoder": "linear",
+      "best_epoch": 59,
+      "parameters": 703440,
+      "best_validation": {
+        "accuracy": 46.16977225672878,
+        "edit": 26.226513244805528,
+        "f1_10": 26.223776223776223,
+        "f1_25": 22.02797202797203,
+        "f1_50": 12.937062937062937,
+        "avg": 26.7170193380691,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "last_validation": {
+        "accuracy": 44.31082331174838,
+        "edit": 22.368075493231668,
+        "f1_10": 21.67487684729064,
+        "f1_25": 18.7192118226601,
+        "f1_50": 12.151067323481117,
+        "avg": 23.844810959682384,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "foreground_accuracy_pct": 24.71031492144736,
+      "missed_segments": 95,
+      "total_segments": 178,
+      "fragmented_segments": 12,
+      "mean_epoch_seconds": 6.371803421682368,
+      "predicted_background_pct": 52.654068102726754,
+      "checkpoint_sha256": "a8995934359231c23c9bfc5eb1d6723495d2cc5efbb3574e9859b8b73b78ef45"
+    },
+    {
+      "encoder": "mlp",
+      "best_epoch": 59,
+      "parameters": 788995,
+      "best_validation": {
+        "accuracy": 49.19166556539359,
+        "edit": 30.60139292585473,
+        "f1_10": 28.84310618066561,
+        "f1_25": 22.503961965134707,
+        "f1_50": 14.263074484944532,
+        "avg": 29.080640224398632,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "last_validation": {
+        "accuracy": 46.22703845645566,
+        "edit": 22.737080271523,
+        "f1_10": 23.014586709886547,
+        "f1_25": 18.80064829821718,
+        "f1_50": 12.641815235008103,
+        "avg": 24.684233794218095,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "foreground_accuracy_pct": 30.859458306675197,
+      "missed_segments": 75,
+      "total_segments": 178,
+      "fragmented_segments": 14,
+      "mean_epoch_seconds": 6.387246108338392,
+      "predicted_background_pct": 45.82176996608079,
+      "checkpoint_sha256": "82177399faacd269f7f4be6158d2d66c2a9cf09fae2bc5b2c77056a942f4d08b"
+    },
+    {
+      "encoder": "gcn",
+      "best_epoch": 50,
+      "parameters": 789136,
+      "best_validation": {
+        "accuracy": 45.39888110655918,
+        "edit": 25.440574311826335,
+        "f1_10": 22.553897180762853,
+        "f1_25": 19.237147595356554,
+        "f1_50": 12.603648424543948,
+        "avg": 25.046829723809772,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "last_validation": {
+        "accuracy": 43.04656182547024,
+        "edit": 24.18767558753173,
+        "f1_10": 21.13564668769716,
+        "f1_25": 16.08832807570978,
+        "f1_50": 9.14826498422713,
+        "avg": 22.72129543212721,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "foreground_accuracy_pct": 25.691334328570413,
+      "missed_segments": 94,
+      "total_segments": 178,
+      "fragmented_segments": 15,
+      "mean_epoch_seconds": 6.7541219683092395,
+      "predicted_background_pct": 49.24452667283379,
+      "checkpoint_sha256": "f9e33206c7026057769f4076432d11fc275f25c8a2cddbe0357cf2f4b28b8c85"
+    }
+  ],
+  "limitations": [
+    "Single seed and subset; no significance or full-data superiority claims.",
+    "MLP/GCN approximately parameter-matched; compute differs.",
+    "Missing segment means no same-class overlap, not official IoU@50 false negative.",
+    "Epoch timings include training AND validation; not inference latency."
+  ]
+}

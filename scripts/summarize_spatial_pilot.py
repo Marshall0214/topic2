@@ -1,5 +1,6 @@
 """Summarize frozen pilot and diagnose validation-only best checkpoints."""
 import hashlib
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -16,6 +17,11 @@ torch.backends.cudnn.deterministic=True
 torch.backends.cuda.matmul.allow_tf32=False
 torch.backends.cudnn.allow_tf32=False
 protocol=json.loads((ROOT/'configs/spatial_pilot.json').read_text())
+parser=argparse.ArgumentParser()
+parser.add_argument('--epochs',type=int,choices=[30,60],default=30)
+args=parser.parse_args()
+protocol['run_prefix']=protocol['run_prefix'].replace('_e30_',f'_e{args.epochs}_')
+protocol['epochs']=args.epochs
 rows=[]; selected=None
 for encoder in protocol['encoders']:
     run=ROOT/'runs'/(protocol['run_prefix']+'_'+encoder)
@@ -55,7 +61,8 @@ for encoder in protocol['encoders']:
                      mean_epoch_seconds=float(np.mean([r['seconds'] for r in history])),
                      predicted_background_pct=float(100*confusion[:,0].sum()/confusion.sum()),
                      checkpoint_sha256=hashlib.sha256((run/'mstcn/best.pt').read_bytes()).hexdigest()))
-out=ROOT/'reports/spatial_pilot'
+out=ROOT/('reports/spatial_pilot' if args.epochs==30 else 'reports/spatial_pilot_e60')
+out.mkdir(exist_ok=True)
 result=dict(protocol=protocol,train_sequences=len(selected['train']),val_sequences=len(selected['val']),
             test_evaluated=False,selection_verified_identical=True,results=rows,
             limitations=['Single seed and subset; no significance or full-data superiority claims.',
