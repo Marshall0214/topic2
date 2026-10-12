@@ -1,0 +1,58 @@
+{
+  "torch": "2.8.0+cu126",
+  "device": "cpu",
+  "seed": 17,
+  "commit": "3b42e7fd74f2e2351562f7ffa4e3f5f0e7a93e83",
+  "source_files": 131,
+  "hash_mismatches": [],
+  "required_sources_present_in_remote": {
+    "prompt/text_prompt.py": false,
+    "prompt/tools.py": false,
+    "libs/loss_fn/circle.py": false,
+    "libs/loss_fn/rdrop.py": true,
+    "libs/perturb.py": false,
+    "libs/models/SP.py": true,
+    "libs/swap.py": true
+  },
+  "splits": {
+    "train": {
+      "rows": 698,
+      "unique": 698,
+      "matches_current": true,
+      "only_curvseg": [],
+      "only_current": []
+    },
+    "val": {
+      "rows": 77,
+      "unique": 77,
+      "matches_current": true,
+      "only_curvseg": [],
+      "only_current": []
+    },
+    "test": {
+      "rows": 234,
+      "unique": 234,
+      "matches_current": true,
+      "only_curvseg": [],
+      "only_current": []
+    }
+  },
+  "argument_parser": "TypeError: _StoreAction.__init__() got an unexpected keyword argument 'typr'",
+  "curvature_gradient": {
+    "input_requires_grad": true,
+    "prior_requires_grad": false,
+    "feature_grad_is_none": true,
+    "boundary_grad_norm": 0.018750231713056564,
+    "loss": 0.6028888821601868
+  },
+  "default_zero_weight_loss": 0.0,
+  "curvature_future_probe": {
+    "change_starts_at": 40,
+    "past_max_abs_change": 0.5209738612174988
+  },
+  "attention_forward_signature": "(self, queries, keys, values, mask, weight=None)",
+  "attention_future_probe": {
+    "change_starts_at": 40,
+    "past_max_abs_change": 0.3506852388381958
+  }
+}

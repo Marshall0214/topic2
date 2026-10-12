@@ -1,0 +1,160 @@
+Standing: The subject stands still with both feet planted firmly on the ground.
+Standing: Upright posture is maintained with minimal upper body movement.
+Standing: Arms rest naturally at the sides, showing no active engagement.
+Standing: The subject faces forward, exhibiting a stable stance.
+Standing: Slight weight shifting between feet is observed.
+Standing: Head is oriented in a fixed direction without scanning.
+Standing: The individual is stationary, possibly waiting or observing.
+Standing: Hands remain idle without object interaction.
+Standing: Both knees are straight, without signs of flexing.
+Standing: The back is erect, with shoulders relaxed.
+Standing: The subject’s silhouette remains unchanged over time.
+Standing: Minimal joint articulation is present.
+Standing: The feet maintain a constant distance apart.
+Standing: No interaction with nearby objects is visible.
+Standing: The body remains within a single spatial zone.
+Standing: The subject appears in a state of readiness or rest.
+Standing: Slight fidgeting is observed in the fingers.
+Standing: The center of gravity remains vertically aligned.
+Standing: Breathing is visible but subtle.
+Standing: Facial orientation is fixed or slowly adjusting.
+Walking: The subject takes consecutive steps with rhythmic leg movement.
+Walking: Arms swing alternately with the legs.
+Walking: The head moves slightly with each stride.
+Walking: Weight transfers dynamically from one foot to the other.
+Walking: The motion direction is forward in a linear path.
+Walking: The torso maintains upright alignment while moving.
+Walking: The gait is even and balanced.
+Walking: Feet lift off the ground in a repeatable pattern.
+Walking: The stride length is consistent.
+Walking: The body shifts spatially across the scene.
+Walking: Foot contact alternates between heel and toe.
+Walking: The pace is steady, not hurried or slowed.
+Walking: Arm swing range matches leg stride.
+Walking: The subject’s head remains level, indicating stability.
+Walking: Clothing and body parts show cyclic motion blur.
+Walking: The trajectory is smooth and uninterrupted.
+Walking: The hips rotate subtly with each step.
+Walking: No secondary tasks are performed during walking.
+Walking: Footsteps produce consistent ground contact sounds.
+Walking: The walking path may curve or remain straight.
+Cart Handling: The subject grasps a cart handle with both hands.
+Cart Handling: Walking is coupled with pushing or pulling the cart.
+Cart Handling: The arms extend forward or backward during movement.
+Cart Handling: The cart moves in sync with the subject’s pace.
+Cart Handling: Directional changes involve slight torso rotation.
+Cart Handling: The subject occasionally pauses to adjust the cart.
+Cart Handling: One leg leads during pivoting maneuvers.
+Cart Handling: The grip is firm and steady on the cart handle.
+Cart Handling: The subject may look down to monitor wheels.
+Cart Handling: The cart and subject form a single dynamic unit.
+Cart Handling: The cart’s inertia affects motion rhythm.
+Cart Handling: Speed changes reflect load management.
+Cart Handling: Posture is slightly leaned forward while pushing.
+Cart Handling: Backward steps are taken during pulling.
+Cart Handling: Terrain changes require adaptation in movement.
+Cart Handling: Cart handling involves both locomotion and control.
+Cart Handling: The hands stay fixed on the cart for most of the action.
+Cart Handling: The subject occasionally halts to reposition.
+Cart Handling: Short-distance stops are used for direction correction.
+Cart Handling: Cart edges or contents are occasionally adjusted.
+Handling (upwards): The subject reaches above head height with extended arms.
+Handling (upwards): A box or object is lifted toward an upper shelf.
+Handling (upwards): The back arches slightly to accommodate the reach.
+Handling (upwards): Tiptoeing may occur to extend vertical range.
+Handling (upwards): Arms stretch fully above shoulder level.
+Handling (upwards): Both hands coordinate the lifting task.
+Handling (upwards): The head tilts upward to track the object.
+Handling (upwards): Shoulders elevate during the action.
+Handling (upwards): The subject may stand on a support for height.
+Handling (upwards): Object orientation is carefully managed during lift.
+Handling (upwards): Upward motion involves shoulder and arm activation.
+Handling (upwards): After reaching, the hands hold briefly at the top.
+Handling (upwards): The load requires sustained overhead posture.
+Handling (upwards): Balance is crucial to prevent tipping.
+Handling (upwards): Muscles tense visibly in arms and upper back.
+Handling (upwards): Elbows may lock during full extension.
+Handling (upwards): The object’s placement area is visually tracked.
+Handling (upwards): One hand may stabilize the item mid-lift.
+Handling (upwards): The spine remains aligned to protect posture.
+Handling (upwards): The object descends slowly if returned.
+Handling (centred): The subject interacts with an object at mid-body level.
+Handling (centred): Arms remain within elbow height range.
+Handling (centred): Bending is minimal or absent.
+Handling (centred): The head remains level with the object.
+Handling (centred): The object is passed laterally or adjusted in front.
+Handling (centred): The posture is upright with stable footing.
+Handling (centred): Hand movements are measured and deliberate.
+Handling (centred): The task involves grasping, rotating, or inspecting.
+Handling (centred): Objects are placed or retrieved from waist-height surfaces.
+Handling (centred): Arm flexion is within normal range.
+Handling (centred): Torso rotation is limited but present.
+Handling (centred): One or both hands may manipulate the item.
+Handling (centred): Mid-body handling involves frequent front-facing actions.
+Handling (centred): The hands remain close to the torso.
+Handling (centred): No vertical strain is observable.
+Handling (centred): Action tempo is moderate and controlled.
+Handling (centred): Elbows stay near the ribcage.
+Handling (centred): Items may be exchanged or transferred.
+Handling (centred): Balance is maintained throughout.
+Handling (centred): The subject may multitask while handling.
+Handling (downwards): The subject bends to reach below knee level.
+Handling (downwards): Kneeling or squatting may assist in object retrieval.
+Handling (downwards): Arms extend downward toward the floor.
+Handling (downwards): The spine flexes forward during reach.
+Handling (downwards): Knees may bend to reduce back strain.
+Handling (downwards): One hand supports the body or a knee.
+Handling (downwards): The subject’s head lowers with gaze fixed downward.
+Handling (downwards): A box or tool is lifted from the ground.
+Handling (downwards): Posture transitions from upright to bent.
+Handling (downwards): The action includes grasping and lifting.
+Handling (downwards): Object weight influences motion speed.
+Handling (downwards): Downward reach may involve a twist at the waist.
+Handling (downwards): The item is brought back to a higher level.
+Handling (downwards): One knee may contact the ground.
+Handling (downwards): Arms move in a scoop or lift motion.
+Handling (downwards): The task often requires balance readjustment.
+Handling (downwards): The subject might pause before lifting.
+Handling (downwards): Back and hamstring engagement is evident.
+Handling (downwards): Shoes or objects near the ground may be targeted.
+Handling (downwards): The subject rises after completing the action.
+Waving hands: Both arms are lifted above the head.
+Waving hands: Hands oscillate side to side.
+Waving hands: The subject faces forward while waving.
+Waving hands: Shoulder joints are fully extended.
+Waving hands: Waving involves rapid forearm motion.
+Waving hands: Fingers are spread or slightly cupped.
+Waving hands: The gesture is often symmetrical.
+Waving hands: Elbows remain elevated.
+Waving hands: The torso may sway slightly with the arms.
+Waving hands: Waving may occur in greeting or to attract attention.
+Waving hands: Duration is short and energetic.
+Waving hands: The subject smiles or shows facial expression.
+Waving hands: Arm angle varies but stays above shoulders.
+Waving hands: The waving speed may vary.
+Waving hands: The subject remains mostly stationary.
+Waving hands: Wrist joints articulate actively.
+Waving hands: A pause may follow the waving gesture.
+Waving hands: The gesture is directed toward a visible target.
+Waving hands: Shoulders move rhythmically.
+Waving hands: Clothes or hair may flutter with the motion.
+None: The subject shows no observable motion.
+None: Hands and feet remain at rest.
+None: The posture is frozen mid-action.
+None: Breathing is the only detectable movement.
+None: The subject may be idle or thinking.
+None: No task is being performed.
+None: Head position is unchanged for an extended period.
+None: Arms hang passively.
+None: Weight distribution is static.
+None: No limb articulation is observed.
+None: The subject may be observing surroundings.
+None: Stillness is complete, without twitching.
+None: A pause occurs between actions.
+None: The body maintains one position across frames.
+None: The subject may be listening or waiting.
+None: Hands remain empty and inactive.
+None: No interaction with objects or people.
+None: Time passes without activity.
+None: The subject does not relocate.
+None: Eyes may blink slowly, but no major motion.
