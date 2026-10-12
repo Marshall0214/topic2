@@ -1,0 +1,45 @@
+{
+  "device": "cuda",
+  "scope": "One validation prefix (96 frames) per model; no training, no test evaluation",
+  "models": {
+    "mstcn": {
+      "best_epoch": 62,
+      "logits_shape": [
+        1,
+        52,
+        96
+      ],
+      "finite": true,
+      "split_hash_matches": true,
+      "resume_passed": false,
+      "resume_check": "Traceback (most recent call last):\n  File \"D:\\topic2\\scripts\\train_small.py\", line 267, in <module>\n    main()\n  File \"D:\\topic2\\scripts\\train_small.py\", line 93, in main\n    raise ValueError(f'Model/input source changed: {source}')\nValueError: Model/input source changed: D:\\topic2\\src\\baseline.py"
+    },
+    "protas": {
+      "best_epoch": 75,
+      "logits_shape": [
+        1,
+        52,
+        96
+      ],
+      "finite": true,
+      "split_hash_matches": true,
+      "resume_passed": true,
+      "resume_check": "Resume verified: protas epoch 100 -> 101; model AND Adam state restored; old run preserved."
+    },
+    "specscalpel": {
+      "best_epoch": 119,
+      "last_epoch": 158,
+      "logits_shape": [
+        1,
+        52,
+        96
+      ],
+      "finite": true,
+      "split_hash_matches": true,
+      "last_model_optimizer_history_rng_loadable": true,
+      "resume_scope": "State restoration only, no optimizer step or exact RNG continuation experiment"
+    }
+  },
+  "checkpoint_and_inference_passed": true,
+  "all_resume_checks_passed": false
+}

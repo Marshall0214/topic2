@@ -34,6 +34,12 @@ torch.backends.cudnn.deterministic=True
 torch.backends.cuda.matmul.allow_tf32=False
 torch.backends.cudnn.allow_tf32=False
 split_path=Path(config['split_path'])
+# Historical metadata remains unchanged; resolve project assets in this checkout.
+old_root=Path(r'D:\AQA\online_skeleton_segmentation_baselines')
+if split_path.is_relative_to(old_root):
+    split_path=ROOT/split_path.relative_to(old_root)
+elif not split_path.is_absolute():
+    split_path=ROOT/split_path
 if hashlib.sha256(split_path.read_bytes()).hexdigest()!=config['split_sha256']:
     raise RuntimeError('Split file changed since training')
 split=json.loads(split_path.read_text())['splits']

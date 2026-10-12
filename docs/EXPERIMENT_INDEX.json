@@ -1,0 +1,343 @@
+[
+  {
+    "run": "diagnostics_monitor_v1",
+    "model": "both",
+    "config": "runs/diagnostics_monitor_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "dptm_reference_pku_full_seed17",
+    "model": "both",
+    "config": "runs/dptm_reference_pku_full_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 775,
+      "val": 0
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "mstcn128_val8_e50_norm_seed17",
+    "model": "mstcn",
+    "config": "runs/mstcn128_val8_e50_norm_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 128,
+      "val": 8
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "mstcn128_val8_e50_seed17",
+    "model": "mstcn",
+    "config": "runs/mstcn128_val8_e50_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 128,
+      "val": 8
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "mstcn_pku_dev_e100_resume_seed17",
+    "model": "mstcn",
+    "config": "runs/mstcn_pku_dev_e100_resume_seed17/config.json",
+    "epochs_requested": 100,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "mstcn_pku_dev_seed17",
+    "model": "mstcn",
+    "config": "runs/mstcn_pku_dev_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "normalization_smoke_v1",
+    "model": "mstcn",
+    "config": "runs/normalization_smoke_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "protas_fixed_graph_smoke_v1",
+    "model": "protas",
+    "config": "runs/protas_fixed_graph_smoke_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "protas_official_behavior_smoke_v1",
+    "model": "protas",
+    "config": "runs/protas_official_behavior_smoke_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "protas_pku_dev_seed17",
+    "model": "protas",
+    "config": "runs/protas_pku_dev_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "protas_pku_fixedgraph_dev_seed17",
+    "model": "protas",
+    "config": "runs/protas_pku_fixedgraph_dev_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "protas_pku_fixedgraph_e100_resume_seed17",
+    "model": "protas",
+    "config": "runs/protas_pku_fixedgraph_e100_resume_seed17/config.json",
+    "epochs_requested": 100,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "reference_trainval_smoke_v1",
+    "model": "both",
+    "config": "runs/reference_trainval_smoke_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 4,
+      "val": 0
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "resume_smoke_base_v1",
+    "model": "mstcn",
+    "config": "runs/resume_smoke_base_v1/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "resume_smoke_continued_v1",
+    "model": "mstcn",
+    "config": "runs/resume_smoke_continued_v1/config.json",
+    "epochs_requested": 2,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "small24_val8_e10_seed17",
+    "model": "both",
+    "config": "runs/small24_val8_e10_seed17/config.json",
+    "epochs_requested": 10,
+    "selected_counts": {
+      "train": 24,
+      "val": 8
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "small24_val8_e50_seed17",
+    "model": "both",
+    "config": "runs/small24_val8_e50_seed17/config.json",
+    "epochs_requested": 50,
+    "selected_counts": {
+      "train": 24,
+      "val": 8
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "smoke_shared_v1",
+    "model": "both",
+    "config": "runs/smoke_shared_v1/config.json",
+    "epochs_requested": 2,
+    "selected_counts": {
+      "train": 2,
+      "val": 2
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e30_seed17_v1_gcn",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e30_seed17_v1_gcn/config.json",
+    "epochs_requested": 30,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e30_seed17_v1_linear",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e30_seed17_v1_linear/config.json",
+    "epochs_requested": 30,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e30_seed17_v1_mlp",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e30_seed17_v1_mlp/config.json",
+    "epochs_requested": 30,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e60_seed17_v1_gcn",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e60_seed17_v1_gcn/config.json",
+    "epochs_requested": 60,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e60_seed17_v1_linear",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e60_seed17_v1_linear/config.json",
+    "epochs_requested": 60,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot128_val24_e60_seed17_v1_mlp",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot128_val24_e60_seed17_v1_mlp/config.json",
+    "epochs_requested": 60,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot_fixed128_val24_e60_seed29_v1_linear",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot_fixed128_val24_e60_seed29_v1_linear/config.json",
+    "epochs_requested": 60,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "spatial_pilot_fixed128_val24_e60_seed29_v1_mlp",
+    "model": "mstcn",
+    "config": "runs/spatial_pilot_fixed128_val24_e60_seed29_v1_mlp/config.json",
+    "epochs_requested": 60,
+    "selected_counts": {
+      "train": 128,
+      "val": 24
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "specscalpel_batch8_entry_check",
+    "model": "specscalpel",
+    "config": "runs/specscalpel_batch8_entry_check/config.json",
+    "epochs_requested": 1,
+    "selected_counts": {
+      "train": 8,
+      "val": 1
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "specscalpel_epoch_loop_check",
+    "model": "specscalpel",
+    "config": "runs/specscalpel_epoch_loop_check/config.json",
+    "epochs_requested": 2,
+    "selected_counts": {
+      "train": 2,
+      "val": 1
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "specscalpel_full_seed17",
+    "model": "specscalpel",
+    "config": "runs/specscalpel_full_seed17/config.json",
+    "epochs_requested": 300,
+    "selected_counts": {
+      "train": 698,
+      "val": 77
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "specscalpel_pilot24_ep20_seed17",
+    "model": "specscalpel",
+    "config": "runs/specscalpel_pilot24_ep20_seed17/config.json",
+    "epochs_requested": 20,
+    "selected_counts": {
+      "train": 24,
+      "val": 8
+    },
+    "historical_metadata_unchanged": true
+  },
+  {
+    "run": "specscalpel_resume_entry_check",
+    "model": "specscalpel",
+    "config": "runs/specscalpel_resume_entry_check/config.json",
+    "epochs_requested": 2,
+    "selected_counts": {
+      "train": 2,
+      "val": 1
+    },
+    "historical_metadata_unchanged": true
+  }
+]

@@ -45,7 +45,7 @@ graph_path = out/'shared_check_graph.pkl'
 make_graph([np.array([0,1,1,2,2]),np.array([2,3,0])],graph_path)
 
 # Check the legacy compatibility path against the actual existing evaluator.
-path = Path(r'D:\AQA\research\keraal_literature\upstream\dest\libs\metric.py')
+path = ROOT/'sources/legacy_dest_reference/metric.py'
 spec = importlib.util.spec_from_file_location('legacy_metric',path)
 legacy = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(legacy)
