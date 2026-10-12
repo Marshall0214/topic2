@@ -1,0 +1,183 @@
+{
+  "scope": "Smoke check only; no test evaluation or accuracy conclusion",
+  "args": {
+    "run": "specscalpel_real_smoke_seed17_compat",
+    "seed": 17,
+    "train_limit": 4,
+    "val_limit": 2,
+    "batch_size": 2
+  },
+  "selected": {
+    "train": [
+      "A02N09-R.npy",
+      "A07N06-L.npy",
+      "A13N04-L.npy",
+      "A26N08-L.npy"
+    ],
+    "val": [
+      "A01N13-R.npy",
+      "A19N08-M.npy"
+    ]
+  },
+  "split_counts": {
+    "train": 698,
+    "val": 77,
+    "test": 234
+  },
+  "split_sha256": "5e7b3c264fa7815b69163c0d0f8108a05988297620f2b64061fea302ed4d2204",
+  "environment": {
+    "torch": "2.8.0+cu126",
+    "torchvision": "0.23.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 4090 D"
+  },
+  "official_full_training_loss": 5.931811571121216,
+  "train_seconds": 6.459924699971452,
+  "peak_gpu_memory_gib": 1.1594624519348145,
+  "boundary_pos_weight": 73.91912676755148,
+  "checks": {
+    "component_losses": [
+      {
+        "name": "classification",
+        "value": 4.125183582305908
+      },
+      {
+        "name": "classification",
+        "value": 4.212425231933594
+      },
+      {
+        "name": "boundary",
+        "value": 1.152401328086853
+      },
+      {
+        "name": "boundary",
+        "value": 1.2417161464691162
+      },
+      {
+        "name": "boundary",
+        "value": 1.2447922229766846
+      },
+      {
+        "name": "contrastive",
+        "value": 2.2500317096710205
+      },
+      {
+        "name": "contrastive",
+        "value": 2.2500901222229004
+      },
+      {
+        "name": "classification",
+        "value": 3.9059970378875732
+      },
+      {
+        "name": "classification",
+        "value": 3.898921489715576
+      },
+      {
+        "name": "boundary",
+        "value": 1.3790768384933472
+      },
+      {
+        "name": "boundary",
+        "value": 1.5425505638122559
+      },
+      {
+        "name": "boundary",
+        "value": 1.3397719860076904
+      },
+      {
+        "name": "contrastive",
+        "value": 2.1015987396240234
+      },
+      {
+        "name": "contrastive",
+        "value": 2.1012539863586426
+      }
+    ],
+    "gradient_steps": [
+      {
+        "gradient_norm": 3.724621295928955,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 4.61793851852417,
+        "tensors": 485
+      }
+    ]
+  },
+  "validation_shapes": [
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1059
+      ],
+      "logits": [
+        1,
+        52,
+        1059
+      ],
+      "boundary": [
+        1,
+        1,
+        1059
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        352
+      ],
+      "logits": [
+        1,
+        52,
+        352
+      ],
+      "boundary": [
+        1,
+        1,
+        352
+      ]
+    }
+  ],
+  "validation": {
+    "raw": {
+      "accuracy": 51.5946137491141,
+      "edit": 0.0,
+      "f1_10": 0.0,
+      "f1_25": 0.0,
+      "f1_50": 0.0,
+      "avg": 10.318922749822821,
+      "sequences": 2,
+      "frames": 1411
+    },
+    "boundary_refined": {
+      "accuracy": 51.5946137491141,
+      "edit": 0.0,
+      "f1_10": 0.0,
+      "f1_25": 0.0,
+      "f1_50": 0.0,
+      "avg": 10.318922749822821,
+      "sequences": 2,
+      "frames": 1411
+    }
+  },
+  "official_protas_supplement_raw": {
+    "accuracy": 51.5946137491141,
+    "edit": 0.0,
+    "f1_10": 0.0,
+    "f1_25": 0.0,
+    "f1_50": 0.0,
+    "avg": 10.318922749822821,
+    "sequences": 2,
+    "frames": 1411,
+    "foreground_accuracy": 0.0,
+    "foreground_frames": 683
+  },
+  "strict_checkpoint_reload": true,
+  "input_protocol": "Official offline future displacement and relative XYZ; text prior",
+  "future_selection_rule": "Unchanged: (raw canonical Edit + raw F1@50)/2",
+  "compatibility": "Only postprocess argrelmax np.bool -> np.bool_; upstream files unchanged"
+}

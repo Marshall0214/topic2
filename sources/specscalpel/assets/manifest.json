@@ -1,0 +1,14 @@
+[
+  {
+    "name": "PKU-subject_actions_pool.npy",
+    "url": "https://raw.githubusercontent.com/HaoyuJi/SpecScalpel/01adb1ed708d410023b8482c52270cac358c8525/text_embeddings/PKU-subject_actions_pool.npy",
+    "bytes": 159872,
+    "sha256": "1d74bac60f383b9a1e639139e218098e010f3a42728230f6b165d222c8ea6785"
+  },
+  {
+    "name": "PKU-subject_joints_pool.npy",
+    "url": "https://raw.githubusercontent.com/HaoyuJi/SpecScalpel/01adb1ed708d410023b8482c52270cac358c8525/text_embeddings/PKU-subject_joints_pool.npy",
+    "bytes": 76928,
+    "sha256": "96ecb36c131366f52d0c750547896ce21450ac977693f59264f0787d888f6831"
+  }
+]

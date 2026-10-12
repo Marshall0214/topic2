@@ -1,0 +1,637 @@
+{
+  "scope": "Smoke check only; no test evaluation or accuracy conclusion",
+  "args": {
+    "run": "specscalpel_24seq_smoke_seed17",
+    "seed": 17,
+    "train_limit": 24,
+    "val_limit": 8,
+    "batch_size": 2
+  },
+  "selected": {
+    "train": [
+      "A02N09-R.npy",
+      "A07N06-L.npy",
+      "A13N04-L.npy",
+      "A26N08-L.npy",
+      "A04N04-M.npy",
+      "A22N09-R.npy",
+      "A23N13-R.npy",
+      "A14N08-M.npy",
+      "A02N04-R.npy",
+      "A26N04-R.npy",
+      "A19N05-R.npy",
+      "A11N09-R.npy",
+      "A02N11-M.npy",
+      "A10N09-M.npy",
+      "A09N12-R.npy",
+      "A17N12-R.npy",
+      "A11N11-R.npy",
+      "A07N05-M.npy",
+      "A20N12-R.npy",
+      "A18N11-M.npy",
+      "A17N01-M.npy",
+      "A25N12-M.npy",
+      "A02N11-R.npy",
+      "A11N13-M.npy"
+    ],
+    "val": [
+      "A01N13-R.npy",
+      "A19N08-M.npy",
+      "A14N01-R.npy",
+      "A19N04-L.npy",
+      "A11N01-R.npy",
+      "A20N04-M.npy",
+      "A13N01-R.npy",
+      "A25N08-R.npy"
+    ]
+  },
+  "split_counts": {
+    "train": 698,
+    "val": 77,
+    "test": 234
+  },
+  "split_sha256": "5e7b3c264fa7815b69163c0d0f8108a05988297620f2b64061fea302ed4d2204",
+  "environment": {
+    "torch": "2.8.0+cu126",
+    "torchvision": "0.23.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 4090 D"
+  },
+  "official_full_training_loss": 5.195085883140564,
+  "train_seconds": 28.127008100040257,
+  "peak_gpu_memory_gib": 1.1594624519348145,
+  "boundary_pos_weight": 73.91912676755148,
+  "checks": {
+    "component_losses": [
+      {
+        "name": "classification",
+        "value": 4.125183582305908
+      },
+      {
+        "name": "classification",
+        "value": 4.212425231933594
+      },
+      {
+        "name": "boundary",
+        "value": 1.152401328086853
+      },
+      {
+        "name": "boundary",
+        "value": 1.2417161464691162
+      },
+      {
+        "name": "boundary",
+        "value": 1.2447922229766846
+      },
+      {
+        "name": "contrastive",
+        "value": 2.2500317096710205
+      },
+      {
+        "name": "contrastive",
+        "value": 2.2500901222229004
+      },
+      {
+        "name": "classification",
+        "value": 3.9059970378875732
+      },
+      {
+        "name": "classification",
+        "value": 3.898921489715576
+      },
+      {
+        "name": "boundary",
+        "value": 1.3790768384933472
+      },
+      {
+        "name": "boundary",
+        "value": 1.5425505638122559
+      },
+      {
+        "name": "boundary",
+        "value": 1.3397719860076904
+      },
+      {
+        "name": "contrastive",
+        "value": 2.1015987396240234
+      },
+      {
+        "name": "contrastive",
+        "value": 2.1012539863586426
+      },
+      {
+        "name": "classification",
+        "value": 3.195923328399658
+      },
+      {
+        "name": "classification",
+        "value": 3.353285312652588
+      },
+      {
+        "name": "boundary",
+        "value": 2.108581304550171
+      },
+      {
+        "name": "boundary",
+        "value": 1.509639859199524
+      },
+      {
+        "name": "boundary",
+        "value": 1.3752391338348389
+      },
+      {
+        "name": "contrastive",
+        "value": 1.9159706830978394
+      },
+      {
+        "name": "contrastive",
+        "value": 1.9161239862442017
+      },
+      {
+        "name": "classification",
+        "value": 3.4152421951293945
+      },
+      {
+        "name": "classification",
+        "value": 3.8763272762298584
+      },
+      {
+        "name": "boundary",
+        "value": 1.7494823932647705
+      },
+      {
+        "name": "boundary",
+        "value": 1.5104992389678955
+      },
+      {
+        "name": "boundary",
+        "value": 1.5159378051757812
+      },
+      {
+        "name": "contrastive",
+        "value": 2.175886631011963
+      },
+      {
+        "name": "contrastive",
+        "value": 2.1755869388580322
+      },
+      {
+        "name": "classification",
+        "value": 3.541567325592041
+      },
+      {
+        "name": "classification",
+        "value": 3.5116496086120605
+      },
+      {
+        "name": "boundary",
+        "value": 1.3897807598114014
+      },
+      {
+        "name": "boundary",
+        "value": 1.4740586280822754
+      },
+      {
+        "name": "boundary",
+        "value": 1.3791111707687378
+      },
+      {
+        "name": "contrastive",
+        "value": 2.179075002670288
+      },
+      {
+        "name": "contrastive",
+        "value": 2.180595874786377
+      },
+      {
+        "name": "classification",
+        "value": 2.9670674800872803
+      },
+      {
+        "name": "classification",
+        "value": 3.2646520137786865
+      },
+      {
+        "name": "boundary",
+        "value": 1.305431842803955
+      },
+      {
+        "name": "boundary",
+        "value": 1.4209182262420654
+      },
+      {
+        "name": "boundary",
+        "value": 1.3187836408615112
+      },
+      {
+        "name": "contrastive",
+        "value": 2.003774642944336
+      },
+      {
+        "name": "contrastive",
+        "value": 2.0038154125213623
+      },
+      {
+        "name": "classification",
+        "value": 3.3225600719451904
+      },
+      {
+        "name": "classification",
+        "value": 3.1443288326263428
+      },
+      {
+        "name": "boundary",
+        "value": 1.566174030303955
+      },
+      {
+        "name": "boundary",
+        "value": 1.570974349975586
+      },
+      {
+        "name": "boundary",
+        "value": 1.5481743812561035
+      },
+      {
+        "name": "contrastive",
+        "value": 2.529339075088501
+      },
+      {
+        "name": "contrastive",
+        "value": 2.5287301540374756
+      },
+      {
+        "name": "classification",
+        "value": 2.4136383533477783
+      },
+      {
+        "name": "classification",
+        "value": 2.9676947593688965
+      },
+      {
+        "name": "boundary",
+        "value": 1.519758701324463
+      },
+      {
+        "name": "boundary",
+        "value": 1.485883355140686
+      },
+      {
+        "name": "boundary",
+        "value": 1.5049165487289429
+      },
+      {
+        "name": "contrastive",
+        "value": 1.8780444860458374
+      },
+      {
+        "name": "contrastive",
+        "value": 1.8764727115631104
+      },
+      {
+        "name": "classification",
+        "value": 3.5624797344207764
+      },
+      {
+        "name": "classification",
+        "value": 4.042605400085449
+      },
+      {
+        "name": "boundary",
+        "value": 1.3481568098068237
+      },
+      {
+        "name": "boundary",
+        "value": 1.3028324842453003
+      },
+      {
+        "name": "boundary",
+        "value": 1.3266384601593018
+      },
+      {
+        "name": "contrastive",
+        "value": 2.295004367828369
+      },
+      {
+        "name": "contrastive",
+        "value": 2.2925240993499756
+      },
+      {
+        "name": "classification",
+        "value": 2.751283645629883
+      },
+      {
+        "name": "classification",
+        "value": 2.697258472442627
+      },
+      {
+        "name": "boundary",
+        "value": 1.412768840789795
+      },
+      {
+        "name": "boundary",
+        "value": 1.414853572845459
+      },
+      {
+        "name": "boundary",
+        "value": 1.3703067302703857
+      },
+      {
+        "name": "contrastive",
+        "value": 2.197026491165161
+      },
+      {
+        "name": "contrastive",
+        "value": 2.196798324584961
+      },
+      {
+        "name": "classification",
+        "value": 2.840815782546997
+      },
+      {
+        "name": "classification",
+        "value": 2.8393752574920654
+      },
+      {
+        "name": "boundary",
+        "value": 1.7212913036346436
+      },
+      {
+        "name": "boundary",
+        "value": 1.7728407382965088
+      },
+      {
+        "name": "boundary",
+        "value": 1.6721315383911133
+      },
+      {
+        "name": "contrastive",
+        "value": 2.0231778621673584
+      },
+      {
+        "name": "contrastive",
+        "value": 2.0219500064849854
+      },
+      {
+        "name": "classification",
+        "value": 2.7934939861297607
+      },
+      {
+        "name": "classification",
+        "value": 2.8187220096588135
+      },
+      {
+        "name": "boundary",
+        "value": 1.7518458366394043
+      },
+      {
+        "name": "boundary",
+        "value": 1.6155152320861816
+      },
+      {
+        "name": "boundary",
+        "value": 1.6389023065567017
+      },
+      {
+        "name": "contrastive",
+        "value": 2.0363283157348633
+      },
+      {
+        "name": "contrastive",
+        "value": 2.0351455211639404
+      }
+    ],
+    "gradient_steps": [
+      {
+        "gradient_norm": 3.724621295928955,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 4.61793851852417,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 5.0855488777160645,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 8.014568328857422,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 3.9936132431030273,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 4.999203205108643,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 4.291311264038086,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 6.18777322769165,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 10.798434257507324,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 3.6746826171875,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 4.431860446929932,
+        "tensors": 485
+      },
+      {
+        "gradient_norm": 3.7027435302734375,
+        "tensors": 485
+      }
+    ]
+  },
+  "validation_shapes": [
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1059
+      ],
+      "logits": [
+        1,
+        52,
+        1059
+      ],
+      "boundary": [
+        1,
+        1,
+        1059
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        352
+      ],
+      "logits": [
+        1,
+        52,
+        352
+      ],
+      "boundary": [
+        1,
+        1,
+        352
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1056
+      ],
+      "logits": [
+        1,
+        52,
+        1056
+      ],
+      "boundary": [
+        1,
+        1,
+        1056
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1026
+      ],
+      "logits": [
+        1,
+        52,
+        1026
+      ],
+      "boundary": [
+        1,
+        1,
+        1026
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1392
+      ],
+      "logits": [
+        1,
+        52,
+        1392
+      ],
+      "boundary": [
+        1,
+        1,
+        1392
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        820
+      ],
+      "logits": [
+        1,
+        52,
+        820
+      ],
+      "boundary": [
+        1,
+        1,
+        820
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        1504
+      ],
+      "logits": [
+        1,
+        52,
+        1504
+      ],
+      "boundary": [
+        1,
+        1,
+        1504
+      ]
+    },
+    {
+      "feature": [
+        1,
+        12,
+        25,
+        925
+      ],
+      "logits": [
+        1,
+        52,
+        925
+      ],
+      "boundary": [
+        1,
+        1,
+        925
+      ]
+    }
+  ],
+  "validation": {
+    "raw": {
+      "accuracy": 42.6358495205311,
+      "edit": 0.0,
+      "f1_10": 0.0,
+      "f1_25": 0.0,
+      "f1_50": 0.0,
+      "avg": 8.52716990410622,
+      "sequences": 8,
+      "frames": 8134
+    },
+    "boundary_refined": {
+      "accuracy": 42.6358495205311,
+      "edit": 0.0,
+      "f1_10": 0.0,
+      "f1_25": 0.0,
+      "f1_50": 0.0,
+      "avg": 8.52716990410622,
+      "sequences": 8,
+      "frames": 8134
+    }
+  },
+  "official_protas_supplement_raw": {
+    "accuracy": 42.6358495205311,
+    "edit": 0.0,
+    "f1_10": 0.0,
+    "f1_25": 0.0,
+    "f1_50": 0.0,
+    "avg": 8.52716990410622,
+    "sequences": 8,
+    "frames": 8134,
+    "foreground_accuracy": 0.0,
+    "foreground_frames": 4666
+  },
+  "strict_checkpoint_reload": true,
+  "input_protocol": "Official offline future displacement and relative XYZ; text prior",
+  "future_selection_rule": "Unchanged: (raw canonical Edit + raw F1@50)/2",
+  "compatibility": "Only postprocess argrelmax np.bool -> np.bool_; upstream files unchanged"
+}
