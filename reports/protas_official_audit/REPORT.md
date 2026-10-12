@@ -21,7 +21,7 @@
 | 输入及数据集 | 官方main默认2048维视频特征；本地300维骨架、52类槽位、PKU划分，不是原视频实验 |
 | 随机过程 | 官方seed1538574472/Python shuffle；本地seed17/NumPy permutation且每轮重设torch种子，不是相同训练轨迹 |
 | 权重选择 | 官方入口使用指定num_epochs对应权重；本地按独立val组合分数选best |
-| 评价 | 本地foreground_canonical和DeST legacy均非已证明的官方PKU口径，不能宣称精确复现DPTM表7 |
+| 评价 | 官方eval.py的Acc仅统计非背景帧，Edit先去背景再合并重复类别；本地canonical的Acc包含背景，Edit在切段去背景后不再次合并。因此存在实质口径差异，不能直接与官方数字比较，也不能宣称精确复现DPTM表7 |
 
 ## 数值验收
 
