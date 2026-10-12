@@ -1,4 +1,4 @@
-"""Real full-sequence smoke check; official preprocessing/model/full training loss.
+"""Real full-sequence pilot/full training; official preprocessing/model/full loss.
 
 Uses training data for optimizer updates and independent validation for metrics.
 Never loads test arrays. No accuracy conclusion should be drawn from this check.
@@ -58,15 +58,26 @@ def main():
     parser.add_argument('--val-limit', type=int, default=2)
     parser.add_argument('--batch-size', type=int, default=2)
     parser.add_argument('--epochs', type=int, default=1)
+    parser.add_argument('--resume', action='store_true', help='Continue last.pt in the same run')
     args = parser.parse_args()
     if Path(args.run).name != args.run or args.run in ('.', '..'):
         parser.error('Use a new simple run name')
-    if min(args.train_limit, args.val_limit, args.batch_size, args.epochs) < 1:
-        parser.error('Positive smoke-check limits required')
+    if min(args.train_limit, args.val_limit) < 0 or min(args.batch_size, args.epochs) < 1:
+        parser.error('Limits must be nonnegative (0=all); batch size and epochs positive')
     if not torch.cuda.is_available():
         raise RuntimeError('CUDA required for official training helper')
     out = ROOT / 'runs' / args.run
-    out.mkdir(parents=True, exist_ok=False)
+    if args.resume:
+        if not (out / 'last.pt').exists():
+            parser.error('--resume requires an existing last.pt')
+        old_config = json.loads((out / 'config.json').read_text())
+        for key in ('seed', 'train_limit', 'val_limit', 'batch_size'):
+            if old_config['args'][key] != getattr(args, key):
+                parser.error(f'Resume configuration mismatch: {key}')
+        if old_config.get('shuffle') is not True:
+            parser.error('Cannot resume older fixed-order pilot as shuffled training')
+    else:
+        out.mkdir(parents=True, exist_ok=False)
     torch.set_num_threads(4)
     random.seed(args.seed)
     np.random.seed(args.seed)
@@ -77,7 +88,7 @@ def main():
     for a, b in [('train', 'val'), ('train', 'test'), ('val', 'test')]:
         assert not set(split[a]) & set(split[b])
     csv_root = out / 'csv'
-    (csv_root / 'PKU-subject').mkdir(parents=True)
+    (csv_root / 'PKU-subject').mkdir(parents=True, exist_ok=args.resume)
     # No test CSV: the official dataset cannot accidentally load test here.
     for part, name in [('train', 'train1'), ('val', 'val1')]:
         with (csv_root / 'PKU-subject' / f'{name}.csv').open('w', newline='') as handle:
@@ -94,7 +105,7 @@ def main():
             dataset_dir=str(DATA.parent), csv_dir=str(csv_root), augmentations=part == 'train')
         indices = list(range(len(full)))
         random.Random(args.seed + (part == 'val')).shuffle(indices)
-        indices = indices[:limit]
+        indices = indices[:limit or None]
         chosen[part] = [Path(full.df.iloc[i]['feature']).name for i in indices]
         datasets[part] = Subset(full, indices)
     assets = ROOT / 'sources/specscalpel/assets'
@@ -138,15 +149,36 @@ def main():
     start = time.perf_counter()
     torch.cuda.reset_peak_memory_stats()
     loader = DataLoader(datasets['train'], batch_size=args.batch_size,
-                        shuffle=False, num_workers=0, collate_fn=collate_fn)
+                        shuffle=True, drop_last=args.train_limit == 0 and args.batch_size > 1,
+                        num_workers=0, collate_fn=collate_fn)
     # Calls the pinned upstream helper, including CE/GSTMSE, boundary, text contrast,
     # and the adjacent-action frequency discrepancy loss without replacements.
     history, best_score = [], -float('inf')
     train_seconds = 0.
+    begin_epoch = 1
+    if args.resume:
+        checkpoint = torch.load(out / 'last.pt', weights_only=True)
+        if checkpoint['selected'] != chosen or old_config['split_sha256'] != hashlib.sha256(split_path.read_bytes()).hexdigest():
+            raise ValueError('Resume split mismatch')
+        model.load_state_dict(checkpoint['model'], strict=True)
+        optimizer.load_state_dict(checkpoint['optimizer'])
+        begin_epoch = checkpoint['epoch'] + 1
+        if begin_epoch > args.epochs:
+            raise ValueError('--epochs must exceed the completed epoch')
+        history = checkpoint['history']
+        best_score = checkpoint['best_score']
+        train_seconds = sum(row['train_seconds'] for row in history)
+        random.setstate(checkpoint['rng']['python'])
+        numpy_state = checkpoint['rng']['numpy']
+        np.random.set_state((numpy_state[0], np.array(numpy_state[1], dtype=np.uint32),
+                             *numpy_state[2:]))
+        torch.set_rng_state(checkpoint['rng']['torch'])
+        torch.cuda.set_rng_state_all(checkpoint['rng']['cuda'])
     (out / 'config.json').write_text(json.dumps(dict(args=vars(args), selected=chosen,
         split_sha256=hashlib.sha256(split_path.read_bytes()).hexdigest(),
+        shuffle=True, drop_last=loader.drop_last,
         selection_rule='(raw canonical Edit + raw F1@50)/2'), indent=2), encoding='utf-8')
-    for epoch in range(1, args.epochs + 1):
+    for epoch in range(begin_epoch, args.epochs + 1):
         start = time.perf_counter()
         loss = train(loader, model, actions, action_graph, joint_graph, cls, bound,
                      contrast, torch.nn.BCEWithLogitsLoss(), .1, optimizer, 0, 'PKU-subject')
@@ -173,11 +205,20 @@ def main():
             predicted_background_ratio=background_frames / frames)
         history.append(record)
         (out / 'history.json').write_text(json.dumps(history, indent=2), encoding='utf-8')
-        checkpoint = dict(model=model.state_dict(), optimizer=optimizer.state_dict(), epoch=epoch,
-                          args=vars(args), selected=chosen, validation_score=score)
-        torch.save(checkpoint, out / 'last.pt')
-        if score > best_score:
+        improved = score > best_score
+        if improved:
             best_score = score
+        numpy_state = np.random.get_state()
+        numpy_state = (numpy_state[0], numpy_state[1].tolist(), *numpy_state[2:])
+        checkpoint = dict(model=model.state_dict(), optimizer=optimizer.state_dict(), epoch=epoch,
+                          args=vars(args), selected=chosen, validation_score=score,
+                          history=history, best_score=best_score,
+                          rng=dict(python=random.getstate(), numpy=numpy_state,
+                                   torch=torch.get_rng_state(), cuda=torch.cuda.get_rng_state_all()))
+        # Replace completed checkpoints atomically so interruption preserves last.pt.
+        torch.save(checkpoint, out / 'last.tmp')
+        (out / 'last.tmp').replace(out / 'last.pt')
+        if improved:
             torch.save(checkpoint, out / 'best.pt')
         print(f'Epoch {epoch}/{args.epochs} loss={loss:.4f} '
               f'Acc={scores["accuracy"]:.2f} FGAcc={record["foreground_accuracy"]:.2f} '
@@ -211,7 +252,7 @@ def main():
             supplement.update(raw, y)
             shapes.append({'feature': list(x.shape), 'logits': list(logits.shape),
                            'boundary': list(boundary.shape)})
-    result = dict(scope='Smoke check only; no test evaluation or accuracy conclusion',
+    result = dict(scope='Train/validation only; no test evaluation',
         args=vars(args), selected=chosen, split_counts={k: len(v) for k, v in split.items()},
         split_sha256=hashlib.sha256(split_path.read_bytes()).hexdigest(),
         environment={'torch': torch.__version__, 'torchvision': torchvision.__version__,
