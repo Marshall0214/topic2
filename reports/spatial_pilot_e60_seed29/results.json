@@ -1,0 +1,97 @@
+{
+  "protocol": {
+    "run_prefix": "spatial_pilot_fixed128_val24_e60_seed29_v1",
+    "encoders": [
+      "linear",
+      "mlp"
+    ],
+    "split": "configs/spatial_pilot_fixed128_val24.json",
+    "train_limit": 0,
+    "val_limit": 0,
+    "epochs": 60,
+    "seed": 29,
+    "stages": 4,
+    "layers": 10,
+    "width": 64,
+    "lr": 0.0005,
+    "normalization": "none",
+    "selection": "validation foreground (Edit+F1@50)/2",
+    "test_evaluation": false
+  },
+  "train_sequences": 128,
+  "val_sequences": 24,
+  "test_evaluated": false,
+  "selection_verified_identical": true,
+  "results": [
+    {
+      "encoder": "linear",
+      "best_epoch": 56,
+      "parameters": 703440,
+      "best_validation": {
+        "accuracy": 47.31950134355315,
+        "edit": 26.177556631647022,
+        "f1_10": 24.836601307189543,
+        "f1_25": 20.915032679738562,
+        "f1_50": 14.052287581699346,
+        "avg": 26.660195908765523,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "last_validation": {
+        "accuracy": 46.94066340689837,
+        "edit": 22.09874332122728,
+        "f1_10": 24.09240924092409,
+        "f1_25": 18.48184818481848,
+        "f1_50": 12.211221122112212,
+        "avg": 24.76497705519609,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "foreground_accuracy_pct": 25.613137129451907,
+      "missed_segments": 90,
+      "total_segments": 178,
+      "fragmented_segments": 18,
+      "mean_epoch_seconds": 6.128026718320325,
+      "predicted_background_pct": 48.174089247169725,
+      "checkpoint_sha256": "659e8f305adf70fc9e3bb3f812c85531a8fdd2562da10c3fe30ba4fe616f16bb"
+    },
+    {
+      "encoder": "mlp",
+      "best_epoch": 55,
+      "parameters": 788995,
+      "best_validation": {
+        "accuracy": 50.588079820272235,
+        "edit": 27.120498261270416,
+        "f1_10": 25.157232704402517,
+        "f1_25": 21.69811320754717,
+        "f1_50": 13.522012578616351,
+        "avg": 27.617187314421738,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "last_validation": {
+        "accuracy": 47.65428835734109,
+        "edit": 25.495113869129693,
+        "f1_10": 24.324324324324326,
+        "f1_25": 21.283783783783782,
+        "f1_50": 12.837837837837837,
+        "avg": 26.319069634483345,
+        "sequences": 24,
+        "frames": 22701
+      },
+      "foreground_accuracy_pct": 31.158029430582214,
+      "missed_segments": 89,
+      "total_segments": 178,
+      "fragmented_segments": 17,
+      "mean_epoch_seconds": 6.16385900498523,
+      "predicted_background_pct": 49.96255671556319,
+      "checkpoint_sha256": "d68c9a63a2904dcceeed0d9b6c6390bfcfe03cabd9d45fac0c242e9376515629"
+    }
+  ],
+  "limitations": [
+    "Single seed and subset; no significance or full-data superiority claims.",
+    "MLP/GCN approximately parameter-matched; compute differs.",
+    "Missing segment means no same-class overlap, not official IoU@50 false negative.",
+    "Epoch timings include training AND validation; not inference latency."
+  ]
+}

@@ -19,13 +19,24 @@ torch.backends.cudnn.allow_tf32=False
 protocol=json.loads((ROOT/'configs/spatial_pilot.json').read_text())
 parser=argparse.ArgumentParser()
 parser.add_argument('--epochs',type=int,choices=[30,60],default=30)
+parser.add_argument('--seed',type=int,choices=[17,29],default=17)
 args=parser.parse_args()
+if args.seed==29 and args.epochs!=60:
+    parser.error('Seed29 pilot was run for 60 epochs')
 protocol['run_prefix']=protocol['run_prefix'].replace('_e30_',f'_e{args.epochs}_')
 protocol['epochs']=args.epochs
+if args.seed==29:
+    protocol.update(run_prefix='spatial_pilot_fixed128_val24_e60_seed29_v1',
+                    seed=29,encoders=['linear','mlp'],split='configs/spatial_pilot_fixed128_val24.json',
+                    train_limit=0,val_limit=0)
 rows=[]; selected=None
 for encoder in protocol['encoders']:
     run=ROOT/'runs'/(protocol['run_prefix']+'_'+encoder)
     cfg=json.loads((run/'config.json').read_text())
+    assert hashlib.sha256(Path(cfg['split_path']).read_bytes()).hexdigest()==cfg['split_sha256']
+    if args.seed==29:
+        frozen=json.loads((ROOT/protocol['split']).read_text())['splits']
+        assert all(set(cfg['selected'][k])==set(frozen[k]) for k in ['train','val'])
     history=json.loads((run/'mstcn/history.json').read_text())
     assert len(history)==protocol['epochs'],'Pilot training not complete'
     if selected is None:selected=cfg['selected']
@@ -62,6 +73,8 @@ for encoder in protocol['encoders']:
                      predicted_background_pct=float(100*confusion[:,0].sum()/confusion.sum()),
                      checkpoint_sha256=hashlib.sha256((run/'mstcn/best.pt').read_bytes()).hexdigest()))
 out=ROOT/('reports/spatial_pilot' if args.epochs==30 else 'reports/spatial_pilot_e60')
+if args.seed==29:
+    out=ROOT/'reports/spatial_pilot_e60_seed29'
 out.mkdir(exist_ok=True)
 result=dict(protocol=protocol,train_sequences=len(selected['train']),val_sequences=len(selected['val']),
             test_evaluated=False,selection_verified_identical=True,results=rows,
@@ -85,7 +98,7 @@ for encoder in protocol['encoders']:
     axes[2].plot(epochs,[r['foreground_canonical']['f1_50'] for r in h],label=encoder)
 for ax,title in zip(axes,['Training loss','Validation Edit','Validation F1@50']):
     ax.set_title(title);ax.set_xlabel('Epoch');ax.grid(alpha=.2);ax.legend()
-fig.suptitle('Spatial pilot: same 128 training / 24 validation sequences, seed 17')
+fig.suptitle(f'Spatial pilot: same 128 training / 24 validation sequences, seed {args.seed}')
 fig.tight_layout()
 fig.savefig(out/'learning_curves.png',dpi=180)
 fig.savefig(out/'learning_curves.svg')
