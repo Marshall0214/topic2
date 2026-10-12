@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from baseline import DATA, Meter, build_model, load_sequence, make_graph, predict_logits, progress_targets, training_loss
 from normalization import TrainingStandardizer, feature_validity
+from spatial_encoders import build_spatial_model
 
 
 def main():
@@ -36,7 +37,10 @@ def main():
     parser.add_argument('--trainval',action='store_true',help='Final fixed-epoch training on train+val; no validation or best checkpoint')
     parser.add_argument('--resume-from',help='Existing run to continue from last.pt into a NEW run directory')
     parser.add_argument('--check-resume',action='store_true',help='Validate resume compatibility only; do not train or create a run')
+    parser.add_argument('--spatial-encoder',choices=['linear','mlp','gcn'],default='linear')
     args = parser.parse_args()
+    if args.spatial_encoder != 'linear' and args.model != 'mstcn':
+        parser.error('Experimental spatial encoders support MS-TCN only')
     if Path(args.run).name != args.run or args.run in ['.','..']:
         parser.error('--run must be a directory name')
     if args.epochs<1 or min(args.train_limit,args.val_limit,args.clip)<0:
@@ -70,6 +74,8 @@ def main():
             parser.error('Resume currently supports one model, full sequences, and separate validation only')
         resume_run = ROOT/'runs'/args.resume_from
         old = json.loads((resume_run/'config.json').read_text())
+        if old.get('spatial_encoder','linear') != args.spatial_encoder:
+            raise ValueError('Resume spatial encoder mismatch')
         for key in ['seed','stages','layers','width','lr','normalization','clip','trainval','batch_size']:
             actual = 1 if key == 'batch_size' else getattr(args,key)
             if old[key] != actual:
@@ -79,6 +85,10 @@ def main():
         for source in [ROOT/'src/baseline.py',ROOT/'src/normalization.py',ROOT/'sources/protas/upstream/model.py']:
             if hashlib.sha256(source.read_bytes()).hexdigest() != old['source_hashes'][str(source.relative_to(ROOT))]:
                 raise ValueError(f'Model/input source changed: {source}')
+        if args.spatial_encoder != 'linear':
+            source=ROOT/'src/spatial_encoders.py'
+            if hashlib.sha256(source.read_bytes()).hexdigest()!=old['source_hashes'][str(source.relative_to(ROOT))]:
+                raise ValueError('Spatial encoder source changed')
         previous = torch.load(resume_run/args.model/'last.pt',map_location='cpu',weights_only=True)
         if previous['kind'] != args.model or 'optimizer' not in previous:
             raise ValueError('Missing or incompatible optimizer/model checkpoint')
@@ -120,11 +130,11 @@ def main():
                   torch=str(torch.__version__),gpu=torch.cuda.get_device_name(0) if args.device=='cuda' else None,
                   normalization_record=normalization_record,
                   training_classes=sorted(set(np.concatenate([cache[n][1] for n in selected['train']]).tolist())),
-                  source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'src/baseline.py',ROOT/'src/normalization.py',Path(__file__),ROOT/'sources/protas/upstream/model.py']})
+                  source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'src/baseline.py',ROOT/'src/normalization.py',ROOT/'src/spatial_encoders.py',Path(__file__),ROOT/'sources/protas/upstream/model.py']})
     (run/'config.json').write_text(json.dumps(config,indent=2),encoding='utf-8')
     snapshot = run/'source_snapshot'
     snapshot.mkdir()
-    for source,target in [(ROOT/'src/baseline.py','baseline.py'),(ROOT/'src/normalization.py','normalization.py'),(Path(__file__),'train_small.py'),(ROOT/'sources/protas/upstream/model.py','pinned_protas_model.py'),(split_path,'split.json')]:
+    for source,target in [(ROOT/'src/baseline.py','baseline.py'),(ROOT/'src/normalization.py','normalization.py'),(ROOT/'src/spatial_encoders.py','spatial_encoders.py'),(Path(__file__),'train_small.py'),(ROOT/'sources/protas/upstream/model.py','pinned_protas_model.py'),(split_path,'split.json')]:
         shutil.copyfile(source,snapshot/target)
     print(f'device={args.device}; train={len(selected["train"])}; val={len(selected["val"])}; classes_present={len(config["training_classes"])}; test_used=False',flush=True)
     print(f'normalization={args.normalization}; statistics from selected training sequences only',flush=True)
@@ -135,7 +145,7 @@ def main():
         random.seed(args.seed)
         folder = run/kind
         folder.mkdir()
-        model = build_model(kind,graph_path,args.stages,args.layers,args.width).to(args.device)
+        model = (build_spatial_model(args.spatial_encoder,args.stages,args.layers,args.width) if kind=='mstcn' else build_model(kind,graph_path,args.stages,args.layers,args.width)).to(args.device)
         optimizer = torch.optim.Adam(model.parameters(),lr=args.lr)
         rng = np.random.default_rng(args.seed)
         history,best = [],-float('inf')

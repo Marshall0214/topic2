@@ -1,0 +1,20 @@
+{
+  "linear": {
+    "parameters": 703440,
+    "encoder_parameters": 19264,
+    "future_difference": 0.0,
+    "prefix_difference": 7.897615432739258e-07
+  },
+  "mlp": {
+    "parameters": 788995,
+    "encoder_parameters": 104819,
+    "future_difference": 0.0,
+    "prefix_difference": 4.172325134277344e-07
+  },
+  "gcn": {
+    "parameters": 789136,
+    "encoder_parameters": 104960,
+    "future_difference": 0.0,
+    "prefix_difference": 2.980232238769531e-07
+  }
+}

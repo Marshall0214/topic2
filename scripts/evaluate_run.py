@@ -11,6 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from baseline import Meter,build_model,load_sequence,predict_logits
 from normalization import TrainingStandardizer,feature_validity
+from spatial_encoders import build_spatial_model
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--run',required=True)
@@ -44,7 +45,7 @@ output={'run':args.run,'evaluation_split':args.split,'checkpoint_rule':args.chec
 for kind in (['mstcn','protas'] if args.model=='both' else [args.model]):
     path=run/kind/f'{args.checkpoint}.pt'
     ckpt=torch.load(path,map_location=args.device,weights_only=True)
-    model=build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width']).to(args.device).eval()
+    model=(build_spatial_model(config.get('spatial_encoder','linear'),config['stages'],config['layers'],config['width']) if kind=='mstcn' else build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width'])).to(args.device).eval()
     model.load_state_dict(ckpt['model'],strict=True)
     meters={'foreground_canonical':Meter(),'dest_legacy':Meter(legacy=True)}
     rows=[]
