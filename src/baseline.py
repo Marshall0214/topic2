@@ -165,11 +165,15 @@ class CausalMSTCN(nn.Module):
         return torch.stack(outputs), None
 
 
-def build_model(kind,graph_path=None,stages=4,layers=10,width=64,graph_reference='independent_copy'):
+def build_model(kind,graph_path=None,stages=4,layers=10,width=64,graph_reference='independent_copy',task_graph='learnable'):
     if kind == 'mstcn':
         return CausalMSTCN(stages,layers,width)
+    if task_graph not in ['learnable','fixed']:
+        raise ValueError('Unknown task graph mode')
     model = PROTAS.MultiStageModel(stages,layers,width,300,52,causal=True,use_graph=True,
-                                  init_graph_path=str(graph_path),learnable=True)
+                                  init_graph_path=str(graph_path),learnable=task_graph=='learnable')
+    if task_graph == 'fixed':
+        return model
     if graph_reference == 'official':
         return model
     if graph_reference != 'independent_copy':

@@ -39,6 +39,7 @@ def main():
     parser.add_argument('--check-resume',action='store_true',help='Validate resume compatibility only; do not train or create a run')
     parser.add_argument('--spatial-encoder',choices=['linear','mlp','gcn'],default='linear')
     parser.add_argument('--graph-reference',choices=['independent_copy','official'],default='independent_copy')
+    parser.add_argument('--task-graph',choices=['learnable','fixed'],default='learnable')
     args = parser.parse_args()
     if args.spatial_encoder != 'linear' and args.model != 'mstcn':
         parser.error('Experimental spatial encoders support MS-TCN only')
@@ -77,6 +78,8 @@ def main():
         old = json.loads((resume_run/'config.json').read_text())
         if old.get('graph_reference','independent_copy') != args.graph_reference:
             raise ValueError('Cannot resume with different graph reference behavior')
+        if old.get('task_graph','learnable') != args.task_graph:
+            raise ValueError('Cannot resume with different task graph mode')
         if old.get('spatial_encoder','linear') != args.spatial_encoder:
             raise ValueError('Resume spatial encoder mismatch')
         for key in ['seed','stages','layers','width','lr','normalization','clip','trainval','batch_size']:
@@ -124,7 +127,7 @@ def main():
                                     validity='per-person current relative; adjacent-pair backward displacement; invalid stays zero',clipping=False)
     progress = {n:progress_targets(y) for n,(_,y) in cache.items()}
     graph_path = run/'train_graph.pkl'
-    make_graph([cache[n][1] for n in selected['train']],graph_path)
+    initial_graph=make_graph([cache[n][1] for n in selected['train']],graph_path)
     config = dict(vars(args),selected=selected,data_root=str(DATA),split_path=str(split_path),
                   split_sha256=hashlib.sha256(split_path.read_bytes()).hexdigest(),test_used=False,
                   features='per-person root-relative XYZ then backward XYZ;300 dims',
@@ -148,7 +151,7 @@ def main():
         random.seed(args.seed)
         folder = run/kind
         folder.mkdir()
-        model = (build_spatial_model(args.spatial_encoder,args.stages,args.layers,args.width) if kind=='mstcn' else build_model(kind,graph_path,args.stages,args.layers,args.width,graph_reference=args.graph_reference)).to(args.device)
+        model = (build_spatial_model(args.spatial_encoder,args.stages,args.layers,args.width) if kind=='mstcn' else build_model(kind,graph_path,args.stages,args.layers,args.width,graph_reference=args.graph_reference,task_graph=args.task_graph)).to(args.device)
         optimizer = torch.optim.Adam(model.parameters(),lr=args.lr)
         rng = np.random.default_rng(args.seed)
         history,best = [],-float('inf')
@@ -201,6 +204,8 @@ def main():
             model.eval()
             canonical,legacy = Meter(),Meter(legacy=True)
             official = OfficialMeter()
+            unadjusted = OfficialMeter()
+            unadjusted_background = 0
             first_stage = Meter()
             predicted_background = true_background = foreground_correct = foreground_frames = validation_frames = 0
             predicted_classes = set()
@@ -215,6 +220,10 @@ def main():
                     canonical.update(pred,labels)
                     legacy.update(pred,labels)
                     official.update(pred,labels)
+                    if kind=='protas':
+                        raw_pred=outputs[-1].argmax(1)[0].cpu().numpy()
+                        unadjusted.update(raw_pred,labels)
+                        unadjusted_background += int((raw_pred==0).sum())
                     first_stage.update(outputs[0].argmax(1)[0].cpu().numpy(),labels)
                     predicted_background += int((pred==0).sum())
                     true_background += int((labels==0).sum())
@@ -228,6 +237,12 @@ def main():
             record['validation_diagnostics'] = dict(predicted_background_fraction=predicted_background/validation_frames,
                     true_background_fraction=true_background/validation_frames,foreground_accuracy=100*foreground_correct/max(1,foreground_frames),
                     predicted_classes=sorted(predicted_classes),first_stage_raw=first_stage.scores())
+            if kind=='protas':
+                record['validation_unadjusted_official']=dict(**unadjusted.scores(),background_fraction=unadjusted_background/validation_frames)
+                record['graph_diagnostics']={name:dict(min=float(getattr(model.graph_learner,name).detach().min()),
+                    max=float(getattr(model.graph_learner,name).detach().max()),
+                    max_initial_drift=float((getattr(model.graph_learner,name).detach()-torch.as_tensor(initial,device=args.device)).abs().max()))
+                    for name,initial in initial_graph.items()}
             history.append(record)
             score = (scores['edit']+scores['f1_50'])/2
             state = dict(model=model.state_dict(),optimizer=optimizer.state_dict(),epoch=epoch,kind=kind,config=config,validation=record)

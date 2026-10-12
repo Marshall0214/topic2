@@ -12,11 +12,14 @@ parser.add_argument('--model',choices=['mstcn','protas','both'],default='both')
 parser.add_argument('--device',choices=['cpu','cuda'],default='cuda')
 parser.add_argument('--dry-run',action='store_true')
 parser.add_argument('--graph-reference',choices=['official','independent_copy'],default='official')
+parser.add_argument('--task-graph',choices=['learnable','fixed'],default='learnable')
 args=parser.parse_args()
 cfg=json.loads((ROOT/'configs/dptm_reference_pku.json').read_text())
 cfg['graph_reference']=args.graph_reference
+cfg['task_graph']=args.task_graph
 command=[sys.executable,'-B',str(ROOT/'scripts/train_small.py'),'--model',args.model,'--run',args.run,'--device',args.device]
 command.extend(['--graph-reference',args.graph_reference])
+command.extend(['--task-graph',args.task_graph])
 for key in ['split','train_limit','val_limit','epochs','clip','seed','stages','layers','width','lr','normalization']:
     command.extend(['--'+key.replace('_','-'),str(cfg[key])])
 if cfg.get('trainval'):command.append('--trainval')

@@ -1,0 +1,11 @@
+{
+  "device": "cuda",
+  "graph_frozen": true,
+  "graph_exact_initial_after_adam": true,
+  "network_updated": true,
+  "graph_loss_class_gradient_l1": 0.0013294161763042212,
+  "graph_loss_progress_gradient_l1": 0.001315186033025384,
+  "future_error": 0.0,
+  "prefix_error": 0.0,
+  "passed": true
+}

@@ -49,7 +49,7 @@ for kind in (['mstcn','protas'] if args.model=='both' else [args.model]):
     path=run/kind/f'{args.checkpoint}.pt'
     ckpt=torch.load(path,map_location=args.device,weights_only=True)
     mode=config.get('graph_reference','independent_copy')
-    model=(build_spatial_model(config.get('spatial_encoder','linear'),config['stages'],config['layers'],config['width']) if kind=='mstcn' else build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width'],graph_reference=mode)).to(args.device).eval()
+    model=(build_spatial_model(config.get('spatial_encoder','linear'),config['stages'],config['layers'],config['width']) if kind=='mstcn' else build_model(kind,run/'train_graph.pkl',config['stages'],config['layers'],config['width'],graph_reference=mode,task_graph=config.get('task_graph','learnable'))).to(args.device).eval()
     model.load_state_dict(ckpt['model'],strict=True)
     meters={'foreground_canonical':Meter(),'dest_legacy':Meter(legacy=True),'protas_official':OfficialMeter()}
     rows=[]

@@ -1,5 +1,7 @@
 # 代码与实验管理
 
+固定任务图消融在experiment/protas-fixed-graph分支开发，继承ab9fb83。新增--task-graph fixed，既有调用默认learnable；固定模式单独运行，不合并main、不更改上游源码。计划与验收位于reports/protas_fixed_graph/。
+
 2026-10-12补充：任务图审计及官方模式/补充评价开发在analysis/protas-task-graph-audit分支进行。baseline.py现增加可选graph_reference和OfficialMeter，旧默认行为保留；官方模式的GPU存储核查纠正与结果见reports/protas_official_audit/SUPPLEMENT_IMPLEMENTATION.md。以下空间筛查阶段“baseline不改”描述属于历史阶段约束。
 
 本项目目录原无 Git，于空间编码筛查开始前初始化本地仓库。
