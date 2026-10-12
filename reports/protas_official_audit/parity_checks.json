@@ -1,0 +1,44 @@
+{
+  "scope": "Synthetic batch1 full-sequence parity at identical initialization; not full training equivalence",
+  "official_configuration": "causal=True,use_graph=True,learnable=True,input_dim=300,classes=52",
+  "loss_error": 0.0,
+  "gradient_error": 2.2351741790771484e-08,
+  "output_error": 0.0,
+  "inference_error": 0.0,
+  "after_equal_parameter_shift": {
+    "official_reference_regularizer": 0.0,
+    "local_reference_regularizer": 0.25
+  },
+  "official_reference_alias": true,
+  "local_reference_alias": false,
+  "pinned_manifest_checks": [
+    {
+      "path": "README.md",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "batch_gen.py",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "eval.py",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "main.py",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "model.py",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "utils/write_graph.py",
+      "matches_pinned_manifest": true
+    },
+    {
+      "path": "utils/write_progress_values.py",
+      "matches_pinned_manifest": true
+    }
+  ]
+}

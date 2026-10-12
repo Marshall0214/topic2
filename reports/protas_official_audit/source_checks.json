@@ -1,0 +1,51 @@
+[
+  {
+    "file": "README.md",
+    "local_sha256": "6707da8dec9a23083842a2173694bbf1f5697f041354a9028f904dd2cfa18916",
+    "official_main_sha256": "6707da8dec9a23083842a2173694bbf1f5697f041354a9028f904dd2cfa18916",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "batch_gen.py",
+    "local_sha256": "31d99986bb6469741cfe9775b76f85c0659e7fe246028bcca28421ad5d8a5881",
+    "official_main_sha256": "31d99986bb6469741cfe9775b76f85c0659e7fe246028bcca28421ad5d8a5881",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "eval.py",
+    "local_sha256": "62c3b2077a9726afc615c312ddf7474475f724b4a609b694c937430b68909624",
+    "official_main_sha256": "62c3b2077a9726afc615c312ddf7474475f724b4a609b694c937430b68909624",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "main.py",
+    "local_sha256": "66cdfcab115b0adf933e4378b83c571818d0c13b8116da5826ae3e12c12776f4",
+    "official_main_sha256": "66cdfcab115b0adf933e4378b83c571818d0c13b8116da5826ae3e12c12776f4",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "model.py",
+    "local_sha256": "dd42974e5dbc9d496a3cd111617c4a7d14aeae8107d3a88aaedfd2b60f3f6423",
+    "official_main_sha256": "dd42974e5dbc9d496a3cd111617c4a7d14aeae8107d3a88aaedfd2b60f3f6423",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "utils/write_graph.py",
+    "local_sha256": "3b9b6901f8b883678a4a026bbc597c0e0d5f273dfe858515e8876aa02a5d6ad5",
+    "official_main_sha256": "3b9b6901f8b883678a4a026bbc597c0e0d5f273dfe858515e8876aa02a5d6ad5",
+    "exact_equal": true,
+    "manifest_equal": true
+  },
+  {
+    "file": "utils/write_progress_values.py",
+    "local_sha256": "cb377d87c5398445dca8fe5363445b7a4e710a06788c0ab73246661283d22aa2",
+    "official_main_sha256": "cb377d87c5398445dca8fe5363445b7a4e710a06788c0ab73246661283d22aa2",
+    "exact_equal": true,
+    "manifest_equal": true
+  }
+]
