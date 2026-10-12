@@ -1,0 +1,127 @@
+{
+  "protocol_checks_passed": true,
+  "graph_drift_all_epochs_zero": true,
+  "selected_epoch": 46,
+  "models": [
+    {
+      "run": "mstcn_pku_dev_seed17",
+      "model": "mstcn",
+      "epoch": 50,
+      "checkpoint_sha256": "b67b6a6d6415d0b9eaff3eba0eddd6fc895c33aba7e5e2824df31d7abbefd43a",
+      "scores": {
+        "foreground_canonical": {
+          "accuracy": 58.293692834320304,
+          "edit": 40.437115189593186,
+          "f1_10": 42.43001333079414,
+          "f1_25": 36.4882879451533,
+          "f1_50": 25.442772805179963,
+          "avg": 40.61837642100818,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "dest_legacy": {
+          "accuracy": 58.293692834320304,
+          "edit": 44.11567273623908,
+          "f1_10": 46.46774383771671,
+          "f1_25": 40.33494515862719,
+          "f1_50": 28.234461611039034,
+          "avg": 43.489303235588466,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "protas_official": {
+          "accuracy": 58.293692834320304,
+          "edit": 45.54173417351027,
+          "f1_10": 42.43001333079414,
+          "f1_25": 36.4882879451533,
+          "f1_50": 25.442772805179963,
+          "avg": 41.63930021779159,
+          "sequences": 234,
+          "frames": 236921,
+          "foreground_accuracy": 44.13026156244587,
+          "foreground_frames": 144325
+        }
+      }
+    },
+    {
+      "run": "protas_pku_dev_seed17",
+      "model": "protas",
+      "epoch": 25,
+      "checkpoint_sha256": "0b3c99e347350627e8c82de4aa1e33acd64af79f51ffb2871413e71aa23d01ad",
+      "scores": {
+        "foreground_canonical": {
+          "accuracy": 52.04519650009919,
+          "edit": 38.2958755816877,
+          "f1_10": 41.10344827586207,
+          "f1_25": 35.144827586206894,
+          "f1_50": 21.90344827586207,
+          "avg": 37.69855924394359,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "dest_legacy": {
+          "accuracy": 52.04519650009919,
+          "edit": 46.660040703665445,
+          "f1_10": 48.0424270784589,
+          "f1_25": 40.27452815473405,
+          "f1_50": 25.08189050070192,
+          "avg": 42.420816587531895,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "protas_official": {
+          "accuracy": 52.04519650009919,
+          "edit": 42.83164691610156,
+          "f1_10": 41.10344827586207,
+          "f1_25": 35.144827586206894,
+          "f1_50": 21.90344827586207,
+          "avg": 38.60571351082636,
+          "sequences": 234,
+          "frames": 236921,
+          "foreground_accuracy": 27.469946301749523,
+          "foreground_frames": 144325
+        }
+      }
+    },
+    {
+      "run": "protas_pku_fixedgraph_dev_seed17",
+      "model": "protas",
+      "epoch": 46,
+      "checkpoint_sha256": "7360547de742ea7d02f05cb7b83db0d0170030fe70283dadcafed05736cff7cc",
+      "scores": {
+        "foreground_canonical": {
+          "accuracy": 56.842998299011064,
+          "edit": 43.06185074418583,
+          "f1_10": 45.881519943356146,
+          "f1_25": 40.453150814255366,
+          "f1_50": 29.029974038234602,
+          "avg": 43.053898767808604,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "dest_legacy": {
+          "accuracy": 56.842998299011064,
+          "edit": 47.5470749817425,
+          "f1_10": 50.86147484493453,
+          "f1_25": 44.824259131633355,
+          "f1_50": 31.619572708476912,
+          "avg": 46.339075993159675,
+          "sequences": 234,
+          "frames": 236921
+        },
+        "protas_official": {
+          "accuracy": 56.842998299011064,
+          "edit": 48.360718363149495,
+          "f1_10": 45.881519943356146,
+          "f1_25": 40.453150814255366,
+          "f1_50": 29.029974038234602,
+          "avg": 44.11367229160133,
+          "sequences": 234,
+          "frames": 236921,
+          "foreground_accuracy": 39.14914256019401,
+          "foreground_frames": 144325
+        }
+      }
+    }
+  ]
+}
